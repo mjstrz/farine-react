@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 function Test() {
     return (
       <div>
-          <h1>Home...</h1>
+          <h1>Hello, World</h1>
       </div>
     )
 }
@@ -21,6 +21,14 @@ function Contact() {
           <h1>Contact...please don't</h1>
       </div>
     )
+}
+
+function Chef() {
+   return (
+      <div>
+         <h1>Bonjour, je m'appelle Romain</h1>
+      </div>
+   )
 }
 
 
@@ -44,6 +52,9 @@ function App() {
                   <li>
                      <Link to="/contact">Contact</Link>
                   </li>
+                  <li>
+                     <Link to="/chef">Chef Romain</Link>
+                  </li>
                </ul>
             </nav>
 
@@ -53,6 +64,9 @@ function App() {
                </Route>
                <Route path="/contact">
                   <Contact />
+               </Route>
+               <Route path="/chef">
+                  <Chef />
                </Route>
                <Route path="/">
                   <Test />
