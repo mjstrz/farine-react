@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Farine Bakery & Cafe</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                   <a href="index.html"><img src="img/Farine_Logo.png" class="img-fluid" alt="Farine logo"/></a>
+                </div>
+                <div class="col">
+                    <h1>Farine Bakery & Cafe</h1>
+                    <h3>Boston, MA</h3>
+                    <p class="text-muted">open everyday 7 AM - 7 PM</p>
+                    <p class="text-muted">bistro fare, house-made fresh breads, pastries & desserts </p>
+                </div>
+                <div class="col-xs-12 col-md-4 col-xl-2 mt-4">
+                  <a role="button" class="btn btn-info btn-lg text-nowrap" data-target="#reserveModal" data-toggle="modal" >Reservations</a>
+              </div> 
+
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <!-- Reserve a Table Modal -->
+
+<div id="reserveModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+              <h3 class="modal-header"> Reserve a Table </h3>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+      
+          <div class="modal-body">
+              <div class="container-fluid">
+                  <form id="reserveForm">
+               <!--  Name -->
+                      <div class="form-group row">
+                          <label for="name" class="col-sm-6 col-form-label">Name</label>
+                          <div class="col-sm-6">
+                              <input type="text" class="form-control" id="name" placeholder="First and Last Name">
+                          </div>
+                      </div>
+                 <!--  Email -->
+                 <div class="form-group row">                      
+                     <label for="email" class="col-sm-6 col-form-label">Email</label>
+                     <div class="col-sm-6">
+                     <input type="email" class="form-control" id="email" placeholder="Email">
+                      </div>
+                 </div>
+
+                 <!-- Phone number -->
+                 <div class="form-group row">
+                     <label for="phone" class="col-sm-6 col-form-label">Phone</label>
+                     <div class="col-sm-6">
+                      <input type="tel" class="form-control" id="phone" placeholder="Phone">
+                     </div>
+                     
+                 </div>
+                  <!-- Number of campers -->
+                      <div class="form-group row">
+                          <label for="numberOfGuests" class="col-sm-6 col-form-label">Number of Guests</label>
+                          <div class="col-sm-6">
+                              <select class="form-control" id="numberOfGuests" name="numberOfGuests" placeholder="Select...">
+                                  <option value="select">
+                                      Select...
+                                  </option>
+                                  <option value="1">
+                                      1
+                                  </option>
+                                  <option value="2">
+                                      2
+                                  </option>
+                                  <option value="3">
+                                      3
+                                  </option>
+                                  <option value="4">
+                                      4
+                                  </option>
+                                  <option value="5">
+                                      5
+                                  </option>
+                                  <option value="6">
+                                      6
+                                  </option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="reserveDate" class="col-sm-6 col-form-label">Date</label>
+                          <div class="col-sm-6">
+                              <input type="date" class="form-control" id="reserveDate" placeholder="Date">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="reserveTime" class="col-sm-6 col-form-label">Time</label>
+                          <div class="col-sm-6">
+                              <input type="time" class="form-control" id="reserveTime" placeholder="Time">
+                          </div>
+                      </div>
+              
+               <!-- Search & Cancel button -->
+                      <div class="form-group row">
+                          <div class="col">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>  
+</div>  
+    
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nucampNavbar">
+              <ul class="navbar-nav d-flex justify-content-center justify-content-between">
+                  <li class="nav-item col-md-2 justify-content"><a class="nav-link text-nowrap" href="ourstory.html"><!-- <i class="fa fa-book fa-lg"></i> -->
+                          Our Story</a></li>
+                  <li class="nav-item col-md-2 justify-content"><a class="nav-link text-nowrap" href="#"><!-- <i class="fa fa-briefcase fa-lg"></i> -->
+                          Join Our Team</a></li>
+                  <li class="nav-item col-md-2 justify-content"><a class="nav-link active" href="menu.html"><!-- <i class="fa fa-list fa-lg"></i> -->Menu</a></li>
+                  <li class="nav-item col-md-2 justify-content-around"><a class="nav-link text-nowrap" href="#"><!-- <i
+                              class="fa fa-address-card fa-lg"></i> --> Gift Cards</a></li>
+                  <li class="nav-item col-md-2 justify-content-between"><a class="nav-link text-nowrap" href="#"><!-- <i
+                              class="fa fa-address-card fa-lg"></i> -->Event Ordering</a></li>
+              </ul>
+            
+          </div>
+      </div>
+  </nav>
+
+              <h2 class="text-center">Food Menu</h2>
+
+  <div class="container">    
+      <div class="row row-content align-items-center">
+        <div class="col">
+          <p id="menuDescription">
+  
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum."
+          </p>
+        </div>
+      </div>
+    </div> 
+
+<!-- Menu Accordion -->
+
+<div class="container">
+    <div class="row row-content">
+        <div class="col">
+            <div class="farineMenu" id="foodMenu">
+
+         <!--  Classics -->
+        <div class="card">
+          <div class="card-header" id="classics">
+            <h2 class="mb-0">
+              <button class="btn btn-light btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseClassics" aria-expanded="true" aria-controls="collapseOne">
+                Classics
+              </button>
+            </h2>
+          </div>
+          <div id="collapseClassics" class="collapse show" aria-labelledby="classics" data-parent="#foodMenu">
+            <div class="card-body">
+              <p class="cardBody"> Our familiar favorites. </p>
+              <!--      <h3>Our Campsites</h3>
+                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your
+                            own
+                            reviews!</p> -->
+
+                            <div class="card-deck">
+                              <div class="card">
+                                <img src="img/menu_croissant.jpeg" class="card-img-top" alt="croissant">
+                                <div class="card-body">
+                                  <h5 class="card-title">Classic Croissant</h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua./p>
+                                </div>
+                                <div class="card-footer">
+                                  <large class="text-muted">$3</large>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <img src="img/menu_breakfastPlate.jpeg" class="card-img-top" alt="Farine Breakfast Plate">
+                                <div class="card-body">
+                                  <h5 class="card-title">Farine Breakfast</h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua.</p>
+                                </div>
+                                <div class="card-footer">
+                                  <large class="text-muted">$10</large>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <img src="img/menu_pancakes.jpeg" class="card-img-top" alt="Pancakes">
+                                <div class="card-body">
+                                  <h5 class="card-title">Pancakes</h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua.</p>
+                                </div>
+                                <div class="card-footer">
+                                  <large class="text-muted">$7</large>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card-deck">
+                              <div class="card">
+                                <img src="img/menu_eggsBenedict.jpeg" class="card-img-top" alt="Eggs Benedict">
+                                <div class="card-body">
+                                  <h5 class="card-title">Eggs Benedict</h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua..</p>
+                                </div>
+                                <div class="card-footer">
+                                  <large class="text-muted">$7</large>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <img src="img/menu_breakfastSandwich.jpeg" class="card-img-top" alt="Breakfast sandwich">
+                                <div class="card-body">
+                                  <h5 class="card-title">Breakfast Sandwich</h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua.</p>
+                                </div>
+                                <div class="card-footer">
+                                  <large class="text-muted">$9</large>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <img src="img/menu_quiche.jpeg" class="card-img-top" alt="Quiche">
+                                <div class="card-body">
+                                  <h5 class="card-title">Quiche</h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua.</p>
+                                </div>
+                                <div class="card-footer">
+                                  <large class="text-muted">$7</large>
+                                </div>
+                              </div>
+                            </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+       <!--  Tartines -->
+        <div class="card">
+          <div class="card-header" id="tartines">
+            <h2 class="mb-0">
+              <button class="btn btn-light btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTartines" aria-expanded="false" aria-controls="collapseTwo">
+                Tartines
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTartines" class="collapse" aria-labelledby="tartines" data-parent="#foodMenu">
+            <div class="card-body">
+              <p class="cardBody"> Made fresh daily. </p>
+
+              <div class="card-deck">
+                <div class="card">
+                  <img src="img/menu_avoToast.jpeg" class="card-img-top" alt="Avocado Toast">
+                  <div class="card-body">
+                    <h5 class="card-title">Avo Toast</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua.</p>
+                  </div>
+                  <div class="card-footer">
+                    <large class="text-muted">$6</large>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/menu_tartineVegetable.jpeg" class="card-img-top" alt="Vegetable tartine">
+                  <div class="card-body">
+                    <h5 class="card-title">Veggie Delight</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua.</p>
+                  </div>
+                  <div class="card-footer">
+                    <large class="text-muted">$7</large>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/menu_tartineSalmon.jpeg" class="card-img-top" alt="Smoked Salmon Tartine">
+                  <div class="card-body">
+                    <h5 class="card-title">Smoked Salmon</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua.</p>
+                  </div>
+                  <div class="card-footer">
+                    <large class="text-muted">$10</large>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Baguette Sandwiches -->
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-light btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Baguette Sandwiches
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#foodMenu">
+            <div class="card-body">
+
+             <p class="cardBody">Made fresh daily. </p>
+
+              <div class="card-deck">
+                <div class="card">
+                  <img src="img/menu_baguetteJambon.jpeg" class="card-img-top" alt="Jambon Beurre sandwich">
+                  <div class="card-body">
+                    <h5 class="card-title">Jambon Beurre</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua.</p>
+                  </div>
+                  <div class="card-footer">
+                    <large class="text-muted">$8</large>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/menu_croissantJambonBeurre.jpg" class="card-img-top" alt="BLT sandwich">
+                  <div class="card-body">
+                    <h5 class="card-title">BLT</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua.</p>
+                  </div>
+                  <div class="card-footer">
+                    <large class="text-muted">$8</large>
+                  </div>
+                </div>
+               
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Waffles -->
+          <div class="card">
+            <div class="card-header" id="headingWaffles">
+              <h2 class="mb-0">
+                <button class="btn btn-light btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseWaffles" aria-expanded="false" aria-controls="collapseWaffles">
+                 Waffles
+                </button>
+              </h2>
+            </div>
+            <div id="collapseWaffles" class="collapse" aria-labelledby="headingWaffles" data-parent="#foodMenu">
+              <div class="card-body">
+               <p class="cardBody"> Made fresh daily. </p>
+
+                <div class="card-deck">
+                  <div class="card">
+                    <img src="img/menu_waffleFruit.jpeg" class="card-img-top" alt="Waffle au Fruit">
+                    <div class="card-body">
+                      <h5 class="card-title">Waffle au Fruit</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                    </div>
+                    <div class="card-footer">
+                      <large class="text-muted">$7</large>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="img/menu_waffleNutella.jpeg" class="card-img-top" alt="Waffle with Nutella">
+                    <div class="card-body">
+                      <h5 class="card-title">Waffle with Nutella</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                    </div>
+                    <div class="card-footer">
+                      <large class="text-muted">$5</large>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="img/menu_waffleSavory.jpeg" class="card-img-top" alt="Savory Waffle">
+                    <div class="card-body">
+                      <h5 class="card-title">Savory Waffle</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                    </div>
+                    <div class="card-footer">
+                      <large class="text-muted">$8</large>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+         <!--  Breads, Pastries and Desserts  -->
+          <div class="card">
+            <div class="card-header" id="desserts">
+              <h2 class="mb-0">
+                <button class="btn btn-light btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseDesserts" aria-expanded="false" aria-controls="collapseDesserts">
+                  Breads, Pastries and Desserts
+                </button>
+              </h2>
+            </div>
+            <div id="collapseDesserts" class="collapse" aria-labelledby="desserts" data-parent="#foodMenu">
+              <div class="card-body">
+                <p class="cardBody"> Made fresh daily. </p>
+
+    <!--     Desserts row 1 -->
+                <div class="card-deck">
+                  <div class="card">
+                    <img src="img/menu_baguette.jpeg" class="card-img-top" alt="French Baguette">
+                    <div class="card-body">
+                      <h5 class="card-title">French Baguette</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                    </div>
+                    <div class="card-footer">
+                      <large class="text-muted">$3</large>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="img/menu_croissant.jpeg" class="card-img-top" alt="croissant">
+                    <div class="card-body">
+                      <h5 class="card-title">Classic Croissant</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua./p>
+                    </div>
+                    <div class="card-footer">
+                      <large class="text-muted">$3</large>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="img/menu_countryLoaf.jpeg" class="card-img-top" alt="Country Loaf">
+                    <div class="card-body">
+                      <h5 class="card-title">Country Loaf</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                    </div>
+                    <div class="card-footer">
+                      <large class="text-muted">$5</large>
+                    </div>
+                  </div>
+                </div>
+
+ <!--     Desserts row 2 -->
+                <div class="card-deck">
+                  <div class="card">
+                    <img src="img/menu_blueberryTart.jpeg" class="card-img-top" alt="Blueberry Tart">
+                    <div class="card-body">
+                      <h5 class="card-title">Blueberry Tart</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                    </div>
+                    <div class="card-footer">
+                      <large class="text-muted">$5</large>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="img/menu_brownie.jpeg" class="card-img-top" alt="Belgian Chocolate Brownie">
+                    <div class="card-body">
+                      <h5 class="card-title">Belgian Chocolate Brownie</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua./p>
+                    </div>
+                    <div class="card-footer">
+                      <large class="text-muted">$4</large>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="img/menu_eclair.jpeg" class="card-img-top" alt="Eclair">
+                    <div class="card-body">
+                      <h5 class="card-title">French Eclair</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                    </div>
+                    <div class="card-footer">
+                      <large class="text-muted">$3</large>
+                    </div>
+                  </div>
+                </div>
+
+      <!--     Desserts row 3 -->
+                <div class="card-deck">
+                  <div class="card">
+                    <img src="img/menu_mousseAuChocolat.jpeg" class="card-img-top" alt="Chocolate Mousse">
+                    <div class="card-body">
+                      <h5 class="card-title">Mousse Au Chocolat</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                    </div>
+                    <div class="card-footer">
+                      <large class="text-muted">$5</large>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="img/menu_pumpkinPie.jpeg" class="card-img-top" alt="Pumpkin Pie Slice">
+                    <div class="card-body">
+                      <h5 class="card-title">Pumpkin Pie Slice</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua./p>
+                    </div>
+                    <div class="card-footer">
+                      <large class="text-muted">$3</large>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="img/menu_cheesecake.jpeg" class="card-img-top" alt="Strawberry Cheesecake">
+                    <div class="card-body">
+                      <h5 class="card-title">Strawberry Cheesecake</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                    </div>
+                    <div class="card-footer">
+                      <large class="text-muted">$4</large>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            
+          </div>
+
+        <!--   Soups & Salads  -->
+
+          <div class="card">
+            <div class="card-header" id="soupsAndSalads">
+              <h2 class="mb-0">
+                <button class="btn btn-light btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSoups" aria-expanded="false" aria-controls="collapseSoups">
+                  Soups & Salads
+                </button>
+              </h2>
+            </div>
+            <div id="collapseSoups" class="collapse" aria-labelledby="soupsAndSalads" data-parent="#foodMenu">
+              <div class="card-body">
+                <p class="cardBody"> Made fresh daily. </p>
+
+                <div class="card-deck">
+                  <div class="card">
+                    <img src="img/menu_Salad.jpeg" class="card-img-top" alt="House Salad">
+                    <div class="card-body">
+                      <h5 class="card-title">House Salad</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                    </div>
+                    <div class="card-footer">
+                      <large class="text-muted">$10</large>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="img/menu_soupFrenchOnion.jpeg" class="card-img-top" alt="French Onion Soup">
+                    <div class="card-body">
+                      <h5 class="card-title">French Onion Soup</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                    </div>
+                    <div class="card-footer">
+                      <large class="text-muted">$7</large>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="img/menu_soupPumpkin.jpeg" class="card-img-top" alt="Pumpkin Soup">
+                    <div class="card-body">
+                      <h5 class="card-title">Pumpkin Soup</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                    </div>
+                    <div class="card-footer">
+                      <large class="text-muted">$7</large>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+ <!-- Extras & Sides -->
+          <div class="card">
+            <div class="card-header" id="extras">
+              <h2 class="mb-0">
+                <button class="btn btn-light btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseExtras" aria-expanded="false" aria-controls="collapseExtras">
+                  Extras & Sides
+                </button>
+              </h2>
+            </div>
+            <div id="collapseExtras" class="collapse" aria-labelledby="extras" data-parent="#foodMenu">
+              <div class="card-body">
+                <p class="cardBody"> Made fresh daily. </p>
+
+<!--           Extras row 1 -->
+
+                <div class="card-deck">
+                  <div class="card">
+                    <img src="img/menu_bacon.jpeg" class="card-img-top" alt="Bacon">
+                    <div class="card-body">
+                      <h5 class="card-title">Crispy Bacon</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                    </div>
+                    <div class="card-footer">
+                      <large class="text-muted">$4</large>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="img/menu_toast.jpeg" class="card-img-top" alt="Toast">
+                    <div class="card-body">
+                      <h5 class="card-title">Toast with Butter</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                    </div>
+                    <div class="card-footer">
+                      <large class="text-muted">$2</large>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="img/menu_fries.jpeg" class="card-img-top" alt="French Fries">
+                    <div class="card-body">
+                      <h5 class="card-title">French Fries</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                    </div>
+                    <div class="card-footer">
+                      <large class="text-muted">$5</large>
+                    </div>
+                  </div>
+                </div>
+
+<!--     Extras row 2 -->
+                <div class="card-deck">
+                  <div class="card">
+                    <img src="img/menu_avocado.jpeg" class="card-img-top" alt="Avocado">
+                    <div class="card-body">
+                      <h5 class="card-title">Avocado</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                    </div>
+                    <div class="card-footer">
+                      <large class="text-muted">$3</large>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="img/menu_cheese.jpeg" class="card-img-top" alt="Emmenthal Cheese">
+                    <div class="card-body">
+                      <h5 class="card-title">Emmenthal Cheese</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                    </div>
+                    <div class="card-footer">
+                      <large class="text-muted">$2</large>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="img/menu_salmon.jpeg" class="card-img-top" alt="Salmon">
+                    <div class="card-body">
+                      <h5 class="card-title">Salmon</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                    </div>
+                    <div class="card-footer">
+                      <large class="text-muted">$4</large>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+      </div>
+
+
+<!--  Footer -->
+
+<footer class="site-footer">
+  <div class="container">
+      <div class="row row-content">
+          <div class="col-md-3">
+              <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                      class="fa fa-instagram"></i></a>
+              <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                      class="fa fa-facebook"></i></a>
+          </div>
+
+              <div class="col-md-3">
+                <p>15 Lorem Ipsum Ln </br> Boston, MA</p>
+              </div>
+
+      <!-- phone and email  -->
+        
+          <div class="col-md-3">
+              <a class="btn btn-link" href="#"><i class="fa fa-phone"></i>(555).555.5555 </a><br>
+          </div>
+          <di class="col-md-3">
+              <a class="btn btn-link" href="#"></a><i class="fa fa-envelope-o"></i>
+              fakeemail@fake.com</a>
+          </div>
+          
+          <div class="col text-center">
+            <p class='text-muted'>Copyright 2021 Monica Strzelecki</p>
+          </div>
+      </div>
+  </div>
+
+</footer>
+
+<!-- Footer End -->
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+</body>
+
+</html>

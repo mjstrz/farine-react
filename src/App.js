@@ -1,13 +1,13 @@
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import Main from './components/Main';
+import Home from './components/Home';
 import Navigation from './components/Navigation';
 import About from './components/About';
 import React from 'react';
 import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 
-function Home() {
+function Test() {
     return (
       <div>
           <h1>Home...</h1>
@@ -18,7 +18,7 @@ function Home() {
 function Contact() {
     return (
       <div>
-          <h1>Contact...please dont</h1>
+          <h1>Contact...please don't</h1>
       </div>
     )
 }
@@ -29,7 +29,7 @@ function App() {
     <div className="container">
     <Header />,
     <Navigation />,
-    <Main />
+    <Home />
 
     <Router>
          <div>
@@ -39,10 +39,10 @@ function App() {
                      <Link to="/">Home</Link>
                   </li>
                   <li>
-                     <Link to="/about">aboot</Link>
+                     <Link to="/about">Our Story</Link>
                   </li>
                   <li>
-                     <Link to="/contact">contacttt</Link>
+                     <Link to="/contact">Contact</Link>
                   </li>
                </ul>
             </nav>
@@ -55,7 +55,7 @@ function App() {
                   <Contact />
                </Route>
                <Route path="/">
-                  <Home />
+                  <Test />
                </Route>
             </Switch>
          </div>

@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { NavLink } from 'react-router-dom';
-import { Button, Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
+import Select from 'react-select'
+import { Button, Modal,  ModalHeader, ModalBody, Form, FormGroup, Input, Label, Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
 
 export default function Header() {
+
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+
+    const setModalIsOpenToTrue =()=>{
+        setModalIsOpen(true)
+    }
+
+    const setModalIsOpenToFalse =()=>{
+        setModalIsOpen(false)
+    }
+
     return(
         
         <div className="container">
@@ -20,10 +32,56 @@ export default function Header() {
 
             {/* <!-- Reserve button  --> */}
                 <div className="col-xs-12 col-md-4 col-xl-2 mt-4">
-                    <Button className="btn btn-info btn-lg">Reservations</Button>
-                    {/* <a role="button" className="btn btn-info btn-lg text-nowrap" data-target="#reserveModal" data-toggle="modal" >Reservations</a> */}
+                    <Button onClick={setModalIsOpenToTrue} className="btn btn-info btn-lg">Reservations</Button>
                 </div> 
             </div>
+
+        {/* // Reservations Model */}
+            <Modal isOpen={modalIsOpen} onRequestClose={()=> setModalIsOpen(false)}>
+            <ModalHeader>Reserve a Table</ModalHeader>
+                    <ModalBody>
+                        <Form>
+                            <FormGroup>
+                                <Label htmlFor="name">Name</Label>
+                                <Input type="text" id="name" name="name" 
+                                     />
+                            </FormGroup>
+                            <FormGroup>
+                                <Label htmlFor="email">Email</Label>
+                                <Input type="email" id="email" name="email" 
+                                />
+                            </FormGroup>
+                            <FormGroup>
+                                <Label htmlFor="phone">Phone</Label>
+                                <Input type="tel" id="phone" name="phone" 
+                                    />
+                            </FormGroup>
+                            <FormGroup>
+                                <Label htmlFor="numberOfGuests">Number of Guests</Label>
+                                <Input type="select" name="numberofGuests" id="numberofGuests">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </Input>
+                            </FormGroup>
+                            <FormGroup>
+                                <Label htmlFor="date">Date</Label>
+                                <Input type="date" id="date" name="date" 
+                                    />
+                            </FormGroup>
+                            <FormGroup>
+                                <Label htmlFor="date">Time</Label>
+                                <Input type="time" id="time" name="time" 
+                                    />
+                            </FormGroup>
+                            <Button type="submit" value="submit" color="success">Submit</Button>
+                            <Button onClick={setModalIsOpenToFalse} type="submit" value="submit" color="light">Cancel</Button>
+                        </Form>
+                    </ModalBody> 
+            </Modal>
+                
         </div>
         
 

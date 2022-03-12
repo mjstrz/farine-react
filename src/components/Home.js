@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
-export default function Main() { 
+export default function Home() { 
     return(
         <div className="Directory align-items-center">
             <div className="row">
