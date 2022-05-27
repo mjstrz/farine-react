@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Select from 'react-select'
 import { Button, Modal,  ModalHeader, ModalBody, Form, FormGroup, Input, Label, Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
 
