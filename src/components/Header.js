@@ -21,7 +21,7 @@ export default function Header() {
         <div className="container">
             <div className="row">
                 <div className="col-4 col-sm-3 col-md-2 align-self-center">
-                    <img src="img/Farine_Logo.png" width="225px" className="img-fluid" alt="Farine logo"/>
+                    <Link to="/"><img src="img/Farine_Logo.png" width="225px" className="img-fluid" alt="Farine logo"/></Link>
                 </div>
                 <div className="col">
                     <h1>Farine Bakery & Cafe</h1>

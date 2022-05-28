@@ -2,10 +2,11 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Button, Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import styled from "styled-components";
 
 export default function Navigation() {
     return(
-        <nav className="navbar navbar-expand-lg navbar-light">
+        <nav className="navbar navbar-expand-lg navbar-light align-items-center">
         <div className="container">
 
         {/* Toggler */}
@@ -15,16 +16,12 @@ export default function Navigation() {
             </button>
             <div className="collapse navbar-collapse align-item-center" id="farineNavbar">
                 <ul className="navbar-nav d-flex justify-content-center justify-content-between">
-                    <li className="nav-item col-md-2 justify-content">
-                        {/* <Link to="/about">Our Story</Link> */}
-                        {/* <a class="nav-link text-nowrap">Our Story</a> */}
-                        </li>
-                    <li className="nav-item col-md-2 justify-content"><a className="nav-link text-nowrap" href="#">
-                            Join Our Team</a></li>
-                    <li className="nav-item col-md-2 justify-content"><a className="nav-link"><Link to="/menu">Menu</Link></a></li>
-                    <li className="nav-item col-md-2 justify-content-around"><a className="nav-link text-nowrap"><Link to="/giftcard">Gift Cards</Link></a></li>
-                    <li className="nav-item col-md-2 justify-content-between"><a className="nav-link text-nowrap" href="#"><Link to="/about">Our Story</Link></a></li>
-                    <li className="nav-item col-md-2 justify-content"><Link to="/romain">Chef Romain</Link></li>
+                    <li className="nav-item col-md-2 justify-content"></li>
+                    <li className="nav-item col-md-2 justify-content text-nowrap">Join Our Team</li>
+                    <li className="nav-item col-md-2 justify-content"><StyledLink to="/menu">Menu</StyledLink></li>
+                    <li className="nav-item col-md-2 justify-content-around"><StyledLink to="/giftcard">Gift Cards</StyledLink></li>
+                    <li className="nav-item col-md-2 justify-content-between"><StyledLink to="/about">Our Story</StyledLink></li>
+                    <li className="nav-item col-md-2 justify-content"><StyledLink to="/romain">Chef Romain</StyledLink></li>
                 </ul>
               
             </div>
@@ -32,3 +29,17 @@ export default function Navigation() {
     </nav>
     )
 }
+
+const StyledLink = styled(Link)`
+  color: Green;
+  text-emphasis: bold;
+margin: 1rem;
+padding: 1em;
+white-space: nowrap;
+position: relative;
+:hover {
+    color: purple;
+    cursor: pointer;
+}
+`;
+

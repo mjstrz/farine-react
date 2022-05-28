@@ -12,14 +12,23 @@ code {
     monospace;
 }
 
-h1, h3, h5 { 
+h1, h3, h5, p { 
   text-align: center;
   font-family: 'Outfit', sans-serif;
+}
+
+.container, p {
+  display: 'flex';
+  justify-content: 'center';
+  align-items: 'center';
+  text-align: center;
+  /* padding: 50px 50px; */
 }
 
 .site-footer{
   display: flex;
   align-items: center; 
+  padding: 3em;
 }
 
 body{
@@ -31,7 +40,10 @@ body{
   text-align: center;
 }
 
-.site-footer { 
-  padding: 3em;
+nav {
+ justify-content: center;
+ display: flex;
 }
+
+
 
