@@ -25,10 +25,11 @@ h1, h3, h5, p {
   /* padding: 50px 50px; */
 }
 
-.site-footer{
+.site-footer, .contact {
   display: flex;
   align-items: center; 
   padding: 3em;
+  justify-content: center;
 }
 
 body{

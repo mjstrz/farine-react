@@ -12,14 +12,14 @@ export default function Footer() {
                         <a className="btn btn-social-icon btn-facebook" href="http://www.facebook.com/"><i className="fa fa-facebook" /></a>{' '}
                     </div>
 
-                    <div className="row row-content">
-                    <ul>
-                        <li>15 Lorem Ipsum Ln,Boston, MA</li>
-                        <li>(555).555.5555 </li>
-                        <li>fakeemail@fake.com</li>
-                    </ul>
+                    <div className="contact">
+                        <ul>
+                            <li>15 Lorem Ipsum Ln,Boston, MA</li>
+                            <li>(555).555.5555 </li>
+                            <li>fakeemail@fake.com</li>
+                        </ul>
                     </div>
-                    </div>
+                </div>
             
                 <footer className='site-footer'>      
                     <h5>
