@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-h1, h3, h5, p { 
+h1, h3, h5, p, li { 
   text-align: center;
   font-family: 'Outfit', sans-serif;
 }
@@ -30,6 +30,19 @@ h1, h3, h5, p {
   align-items: center; 
   padding: 3em;
   justify-content: center;
+}
+
+.contact-footer {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+li {
+  padding: 3em;
+  align-items: center;
 }
 
 body{
