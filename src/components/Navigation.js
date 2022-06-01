@@ -15,7 +15,7 @@ export default function Navigation() {
                 {/* NOTE: TOGGLER DOESN'T work! Need to add this functionality */}
             </button>
             <div className="collapse navbar-collapse align-item-center" id="farineNavbar">
-                <ul className="navbar-nav d-flex justify-content-center justify-content-between">
+                <ul className="navbar-nav justify-content-center justify-content-between">
                     <li className="nav-item col-md-2 justify-content"></li>
                     <li className="nav-item col-md-2 justify-content text-nowrap">Join Our Team</li>
                     <li className="nav-item col-md-2 justify-content"><StyledLink to="/menu">Menu</StyledLink></li>

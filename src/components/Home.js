@@ -5,8 +5,8 @@ import { NavLink, Link } from 'react-router-dom';
 
 export default function Home() { 
     return(
-        <div className="Directory align-items-center">
-            <div className="row">
+        <div className="Directory justify-content-center">
+            <div className="row justify-content-center">
             <Card className="col-5">
                     <CardImg src="img/OrderOnline.jpeg" alt="Order Online" />
                     <CardImgOverlay>

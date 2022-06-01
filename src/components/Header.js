@@ -32,7 +32,7 @@ export default function Header() {
 
             {/* <!-- Reserve button  --> */}
                 <div className="col-xs-12 col-md-4 col-xl-2 mt-4">
-                    <Button onClick={setModalIsOpenToTrue} className="btn btn-info btn-lg">Reservations</Button>
+                    <Button onClick={setModalIsOpenToTrue} className="btn btn-info btn-md">Reservations</Button>
                 </div> 
             </div>
 
