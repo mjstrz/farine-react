@@ -11,7 +11,7 @@ import { BrowserRouter, Switch, Route, Redirect, withRouter } from 'react-router
 
 export default function Main() {
     return (
-        <div>
+        <div className='container'>
             <Header />
             <Navigation />
                 <Switch>

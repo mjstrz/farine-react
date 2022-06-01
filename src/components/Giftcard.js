@@ -6,7 +6,7 @@ export default function Giftcard() {
     return (
       <div className='container'>
         <div className='giftcard'>
-          <h1>Buy a giftcard!</h1>
+          <h1 className='giftcard-header'>Buy a giftcard!</h1>
 
           <p className='col-8 md-6 sm-3'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
