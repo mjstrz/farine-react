@@ -17,7 +17,7 @@ export default function Navigation() {
             <div className="collapse navbar-collapse align-item-center" id="farineNavbar">
                 <ul className="navbar-nav justify-content-center justify-content-between">
                     <li className="nav-item col-md-2 justify-content"></li>
-                    <li className="nav-item col-md-2 justify-content text-nowrap">Join Our Team</li>
+                    <li className="nav-item col-md-2 justify-content text-nowrap"><StyledLink to="/menutest">Join Our Team</StyledLink></li>
                     <li className="nav-item col-md-2 justify-content"><StyledLink to="/menu">Menu</StyledLink></li>
                     <li className="nav-item col-md-2 justify-content-around"><StyledLink to="/giftcard">Gift Cards</StyledLink></li>
                     <li className="nav-item col-md-2 justify-content-between"><StyledLink to="/about">Our Story</StyledLink></li>
