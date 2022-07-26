@@ -1,11 +1,6 @@
 import React from 'react';
-// import {Collapse} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import Accordion from 'react-bootstrap/Accordion';
-// import Card from 'react-bootstrap/Card';
-// import Button from 'react-bootstrap/Button';
-import { Accordion, Card, Button, CardGroup, CardImg } from 'react-bootstrap';
-import { CardBody } from 'reactstrap';
+import { Accordion, Card, Button, CardGroup, Col, Container, Row } from 'react-bootstrap';
 
 export default function Menu() {
     return(
@@ -15,8 +10,10 @@ export default function Menu() {
             <Accordion.Header>Classics</Accordion.Header>
               <Accordion.Body>
                 <p>Our Familiar Favorites.</p>
+                <Container>
                 <CardGroup>
-                    <Card className='col-4'>
+                  <Row>
+                    <Card className='col-md-4'>
                       <Card.Img src="img/menu_croissant.jpeg" alt="croissant" />
                         <Card.Body>
                           <Card.Title>Classic Croissant</Card.Title>
@@ -25,7 +22,7 @@ export default function Menu() {
                         </Card.Body>
                         <Card.Footer><large class="text-muted">$3</large></Card.Footer>           
                     </Card>
-                    <Card className='col-4'>
+                    <Card className='col-md-4'>
                       <Card.Img src="img/menu_breakfastPlate.jpeg" alt="Farine Breakfast Plate" />
                         <Card.Body>
                           <Card.Title>Farine Breakfast</Card.Title>
@@ -34,7 +31,7 @@ export default function Menu() {
                         </Card.Body>
                         <Card.Footer><large class="text-muted">$10</large></Card.Footer>    
                     </Card>
-                    <Card className='col-4'>
+                    <Card className='col-md-4'>
                       <Card.Img src="img/menu_pancakes.jpeg" class="card-img-top" alt="Pancakes" />
                         <Card.Body>
                           <Card.Title>Pancakes</Card.Title>
@@ -43,7 +40,9 @@ export default function Menu() {
                         </Card.Body>
                         <Card.Footer><large class="text-muted">$7</large></Card.Footer>
                     </Card>
-                    <Card className='col-4'>
+                    </Row>
+                    <Row>
+                    <Card className='col-md-4'>
                       <Card.Img src="img/menu_eggsBenedict.jpeg" class="card-img-top" alt="Eggs Benedict"/>
                         <Card.Body>
                           <Card.Title>Eggs Benedict</Card.Title>
@@ -53,7 +52,7 @@ export default function Menu() {
                         <Card.Footer> <large class="text-muted">$7</large></Card.Footer>
                     </Card>
                     
-                    <Card className='col-4'>
+                    <Card className='col-md-4'>
                       <Card.Img src="img/menu_breakfastSandwich.jpeg" class="card-img-top" alt="Breakfast sandwich" />
                         <Card.Body>
                           <Card.Title>Breakfast Sandwich</Card.Title>
@@ -62,7 +61,7 @@ export default function Menu() {
                         </Card.Body>
                         <Card.Footer><large class="text-muted">$9</large></Card.Footer>
                     </Card>
-                    <Card className='col-4'>
+                    <Card className='col-md-4'>
                       <Card.Img src="img/menu_quiche.jpeg" class="card-img-top" alt="Quiche"/>
                         <Card.Body>
                           <Card.Title>Quiche</Card.Title>
@@ -70,8 +69,10 @@ export default function Menu() {
                                         magna aliqua.</Card.Text>
                         </Card.Body>
                         <Card.Footer><large class="text-muted">$7</large></Card.Footer>
-                    </Card>  
+                    </Card>
+                    </Row>  
                 </CardGroup>
+                </Container>
               </Accordion.Body>
           </Accordion.Item>
 
@@ -187,82 +188,88 @@ export default function Menu() {
             <Accordion.Header>Breads, Pastries and Desserts</Accordion.Header>
               <Accordion.Body>
                 <p>Made Fresh Daily.</p>
+                <Container>
                 <CardGroup>
-
-                  <Card>
-                    <Card.Img src="img/menu_croissant.jpeg" class="card-img-top" alt="croissant"/>
-                      <Card.Body>
-                        <Card.Title>Classic Croissant</Card.Title>
-                          <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.</Card.Text>                
-                      </Card.Body>
-                      <Card.Footer><large class="text-muted">$3</large></Card.Footer>
-                  </Card>
-                  <Card>
-                    <Card.Img src="img/menu_countryLoaf.jpeg" class="card-img-top" alt="Country Loaf" />
-                      <Card.Body>
-                        <Card.Title>Country Loaf</Card.Title>
-                          <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.</Card.Text>                
-                      </Card.Body>
-                      <Card.Footer><large class="text-muted">$5</large></Card.Footer>
-                  </Card>
-                  <Card>
-                    <Card.Img  src="img/menu_blueberryTart.jpeg" class="card-img-top" alt="Blueberry Tart"/>
-                      <Card.Body>
-                        <Card.Title>Blueberry Tart</Card.Title>
-                          <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.</Card.Text>                
-                      </Card.Body>
-                      <Card.Footer><large class="text-muted">$5</large></Card.Footer>
-                  </Card>
-                  <Card>
-                    <Card.Img src="img/menu_brownie.jpeg" class="card-img-top" alt="Belgian Chocolate Brownie"/>
-                      <Card.Body>
-                        <Card.Title>Belgian Chocolate Brownie</Card.Title>
-                          <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.</Card.Text>                
-                      </Card.Body>
-                      <Card.Footer><large class="text-muted">$4</large></Card.Footer>
-                  </Card>
-                  <Card>
-                    <Card.Img src="img/menu_eclair.jpeg" class="card-img-top" alt="Eclair"/>
-                      <Card.Body>
-                        <Card.Title>French Eclair</Card.Title>
-                          <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.</Card.Text>                
-                      </Card.Body>
-                      <Card.Footer><large class="text-muted">$3</large></Card.Footer>
-                  </Card>
-                  <Card>
-                    <Card.Img src="img/menu_mousseAuChocolat.jpeg" class="card-img-top" alt="Chocolate Mousse"/>
-                      <Card.Body>
-                        <Card.Title>Mousse Au Chocolat</Card.Title>
-                          <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.</Card.Text>                
-                      </Card.Body>
-                      <Card.Footer><large class="text-muted">$5</large></Card.Footer>
-                  </Card>
-                  <Card>
-                    <Card.Img src="img/menu_pumpkinPie.jpeg" class="card-img-top" alt="Pumpkin Pie Slice"/>
-                      <Card.Body>
-                        <Card.Title>Pumpkin Pie Slice</Card.Title>
-                          <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.</Card.Text>                
-                      </Card.Body>
-                      <Card.Footer><large class="text-muted">$3</large></Card.Footer>
-                  </Card>
-                  <Card>
-                    <Card.Img src="img/menu_cheesecake.jpeg" class="card-img-top" alt="Strawberry Cheesecake" />
-                      <Card.Body>
-                        <Card.Title>Strawberry Cheesecake</Card.Title>
-                          <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.</Card.Text>                
-                      </Card.Body>
-                      <Card.Footer><large class="text-muted">$4</large></Card.Footer>
-                  </Card>
-
+                  <Row>
+                    <Card className='col-md-4'>
+                      <Card.Img src="img/menu_croissant.jpeg" class="card-img-top" alt="croissant"/>
+                        <Card.Body>
+                          <Card.Title>Classic Croissant</Card.Title>
+                            <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                              magna aliqua.</Card.Text>                
+                        </Card.Body>
+                        <Card.Footer><large class="text-muted">$3</large></Card.Footer>
+                    </Card>
+                    <Card className='col-md-4'>
+                      <Card.Img src="img/menu_countryLoaf.jpeg" class="card-img-top" alt="Country Loaf" />
+                        <Card.Body>
+                          <Card.Title>Country Loaf</Card.Title>
+                            <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                              magna aliqua.</Card.Text>                
+                        </Card.Body>
+                        <Card.Footer><large class="text-muted">$5</large></Card.Footer>
+                    </Card>
+                    <Card className='col-md-4'>
+                      <Card.Img  src="img/menu_blueberryTart.jpeg" class="card-img-top" alt="Blueberry Tart"/>
+                        <Card.Body>
+                          <Card.Title>Blueberry Tart</Card.Title>
+                            <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                              magna aliqua.</Card.Text>                
+                        </Card.Body>
+                        <Card.Footer><large class="text-muted">$5</large></Card.Footer>
+                    </Card>
+                  </Row>
+                  <Row>
+                    <Card className='col-md-4'>
+                      <Card.Img src="img/menu_brownie.jpeg" class="card-img-top" alt="Belgian Chocolate Brownie"/>
+                        <Card.Body>
+                          <Card.Title>Belgian Chocolate Brownie</Card.Title>
+                            <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                              magna aliqua.</Card.Text>                
+                        </Card.Body>
+                        <Card.Footer><large class="text-muted">$4</large></Card.Footer>
+                    </Card>
+                    <Card className='col-md-4'>
+                      <Card.Img src="img/menu_eclair.jpeg" class="card-img-top" alt="Eclair"/>
+                        <Card.Body>
+                          <Card.Title>French Eclair</Card.Title>
+                            <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                              magna aliqua.</Card.Text>                
+                        </Card.Body>
+                        <Card.Footer><large class="text-muted">$3</large></Card.Footer>
+                    </Card>
+                    <Card className='col-md-4'>
+                      <Card.Img src="img/menu_mousseAuChocolat.jpeg" class="card-img-top" alt="Chocolate Mousse"/>
+                        <Card.Body>
+                          <Card.Title>Mousse Au Chocolat</Card.Title>
+                            <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                              magna aliqua.</Card.Text>                
+                        </Card.Body>
+                        <Card.Footer><large class="text-muted">$5</large></Card.Footer>
+                    </Card>
+                  </Row>
+                  <Row>
+                    <Card className='col-md-5'>
+                      <Card.Img src="img/menu_pumpkinPie.jpeg" class="card-img-top" alt="Pumpkin Pie Slice"/>
+                        <Card.Body>
+                          <Card.Title>Pumpkin Pie Slice</Card.Title>
+                            <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                              magna aliqua.</Card.Text>                
+                        </Card.Body>
+                        <Card.Footer><large class="text-muted">$3</large></Card.Footer>
+                    </Card>
+                    <Card className='col-md-5'>
+                      <Card.Img src="img/menu_cheesecake.jpeg" class="card-img-top" alt="Strawberry Cheesecake" />
+                        <Card.Body>
+                          <Card.Title>Strawberry Cheesecake</Card.Title>
+                            <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                              magna aliqua.</Card.Text>                
+                        </Card.Body>
+                        <Card.Footer><large class="text-muted">$4</large></Card.Footer>
+                    </Card>
+                  </Row>
                 </CardGroup>
+                </Container>
               </Accordion.Body>
           </Accordion.Item>
 
@@ -306,92 +313,101 @@ export default function Menu() {
             <Accordion.Header>Extras & Sides</Accordion.Header>
               <Accordion.Body>
                 <p>That little something extra.</p>
+                <Container>
                 <CardGroup>
-                <Card>
-                    <Card.Img src="img/menu_bacon.jpeg" class="card-img-top" alt="Bacon"/>
-                      <Card.Body>
-                        <Card.Title>Crispy Bacon</Card.Title>
-                          <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.</Card.Text>                
-                      </Card.Body>
-                      <Card.Footer><large class="text-muted">$4</large></Card.Footer>
-                  </Card>
-                  <Card>
-                    <Card.Img  src="img/menu_toast.jpeg" class="card-img-top" alt="Toast" />
-                      <Card.Body>
-                        <Card.Title>Toast with Butter</Card.Title>
-                          <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.</Card.Text>                
-                      </Card.Body>
-                      <Card.Footer><large class="text-muted">$2</large></Card.Footer>
-                  </Card>
-                  <Card>
-                    <Card.Img src="img/menu_fries.jpeg" class="card-img-top" alt="French Fries"/>
-                      <Card.Body>
-                        <Card.Title>French Fries</Card.Title>
-                          <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.</Card.Text>                
-                      </Card.Body>
-                      <Card.Footer><large class="text-muted">$5</large></Card.Footer>
-                  </Card>
-                  <Card>
-                    <Card.Img src="img/menu_avocado.jpeg" class="card-img-top" alt="Avocado" />
-                      <Card.Body>
-                        <Card.Title>Avocado</Card.Title>
-                          <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.</Card.Text>                
-                      </Card.Body>
-                      <Card.Footer><large class="text-muted">$3</large></Card.Footer>
-                  </Card>
-                  <Card>
-                    <Card.Img src="img/menu_cheese.jpeg" class="card-img-top" alt="Emmenthal Cheese"/>
-                      <Card.Body>
-                        <Card.Title>Emmenthal Cheese</Card.Title>
-                          <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.</Card.Text>
-                      </Card.Body>
-                      <Card.Footer><large class="text-muted">$2</large></Card.Footer>
-                  </Card>
-                  <Card>
-                    <Card.Img src="img/menu_salmon.jpeg" class="card-img-top" alt="Salmon" />
-                      <Card.Body>
-                        <Card.Title>Salmon</Card.Title>
-                          <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.</Card.Text>
-                      </Card.Body>
-                      <Card.Footer><large class="text-muted">$4</large></Card.Footer>
-                  </Card>
-                </CardGroup>
+                  <Row>
+                    <Card className='col-md-4'>
+                        <Card.Img src="img/menu_bacon.jpeg" class="card-img-top" alt="Bacon"/>
+                          <Card.Body>
+                            <Card.Title>Crispy Bacon</Card.Title>
+                              <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.</Card.Text>                
+                          </Card.Body>
+                          <Card.Footer><large class="text-muted">$4</large></Card.Footer>
+                      </Card>
+                      <Card className='col-md-4'>
+                        <Card.Img  src="img/menu_toast.jpeg" class="card-img-top" alt="Toast" />
+                          <Card.Body>
+                            <Card.Title>Toast with Butter</Card.Title>
+                              <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.</Card.Text>                
+                          </Card.Body>
+                          <Card.Footer><large class="text-muted">$2</large></Card.Footer>
+                      </Card>
+                      <Card className='col-md-4'>
+                        <Card.Img src="img/menu_fries.jpeg" class="card-img-top" alt="French Fries"/>
+                          <Card.Body>
+                            <Card.Title>French Fries</Card.Title>
+                              <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.</Card.Text>                
+                          </Card.Body>
+                          <Card.Footer><large class="text-muted">$5</large></Card.Footer>
+                      </Card>
+                      </Row>
+                      <Row>
+                        <Card className='col-md-4'>
+                          <Card.Img src="img/menu_avocado.jpeg" class="card-img-top" alt="Avocado" />
+                            <Card.Body>
+                              <Card.Title>Avocado</Card.Title>
+                                <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                  magna aliqua.</Card.Text>                
+                            </Card.Body>
+                            <Card.Footer><large class="text-muted">$3</large></Card.Footer>
+                        </Card>
+                        <Card className='col-md-4'>
+                          <Card.Img src="img/menu_cheese.jpeg" class="card-img-top" alt="Emmenthal Cheese"/>
+                            <Card.Body>
+                              <Card.Title>Emmenthal Cheese</Card.Title>
+                                <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                  magna aliqua.</Card.Text>
+                            </Card.Body>
+                            <Card.Footer><large class="text-muted">$2</large></Card.Footer>
+                        </Card>
+                        <Card className='col-md-4'>
+                          <Card.Img src="img/menu_salmon.jpeg" class="card-img-top" alt="Salmon" />
+                            <Card.Body>
+                              <Card.Title>Salmon</Card.Title>
+                                <Card.Text></Card.Text>
+                            </Card.Body>
+                            <Card.Footer><large class="text-muted">$4</large></Card.Footer>
+                        </Card>
+                      </Row>
+                    </CardGroup>
+                </Container>
               </Accordion.Body>
             </Accordion.Item>
 
           <Accordion.Item eventKey="7">
             <Accordion.Header>Coffee & Tea</Accordion.Header>
               <Accordion.Body>
+                <p>Enjoy a cuppa.</p>
                 <CardGroup>
-                  <Card>
-                      <Card.Img />
+                  <Card className='col-md-4'>
+                      <Card.Img src="img/cappucino.jpg" alt="cappucino" />
                         <Card.Body>
-                          <Card.Title></Card.Title>
-                            <Card.Text></Card.Text>
+                          <Card.Title>Capuccino</Card.Title>
+                            <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                  magna aliqua.</Card.Text>
                         </Card.Body>
-                        <Card.Footer></Card.Footer>
+                        <Card.Footer><large class="text-muted">$2</large></Card.Footer>
                     </Card>
-                    <Card>
-                    <Card.Img />
+                    <Card className='col-md-4'>
+                    <Card.Img src="img/latte.jpg" alt="latte" />
                       <Card.Body>
-                        <Card.Title></Card.Title>
-                          <Card.Text></Card.Text>
+                        <Card.Title>Latte</Card.Title>
+                          <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                  magna aliqua.</Card.Text>
                       </Card.Body>
-                      <Card.Footer></Card.Footer>
+                      <Card.Footer><large class="text-muted">$2</large></Card.Footer>
                   </Card>
-                  <Card>
-                    <Card.Img />
+                  <Card className='col-md-4'>
+                    <Card.Img src="img/tea.jpg" alt="teapot and cups"/>
                       <Card.Body>
-                        <Card.Title></Card.Title>
-                          <Card.Text></Card.Text>
+                        <Card.Title>Tea</Card.Title>
+                          <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                  magna aliqua.</Card.Text>
                       </Card.Body>
-                      <Card.Footer></Card.Footer>
+                      <Card.Footer><large class="text-muted">$2</large></Card.Footer>
                   </Card>
                 </CardGroup>
               </Accordion.Body>
