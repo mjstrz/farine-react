@@ -2,28 +2,28 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import styled from "styled-components";
 import {SocialMediaButtons, SocialButtonsContainer} from 'react-social-media-buttons';
+import {Col, Container, Row} from 'react-bootstrap';
 
 
 export default function Footer() {
     const year = new Date().getFullYear();
     return(
         
+        <div>
             <div className='container'>      
-                {/* <div className="row row-content"> */}
-                    {/* <div className="col col-md-2">
-
-                    </div> */}
-
-                    <div className="contact">
-                        {/* <div className='row row-content'> */}
-                        <ul className='contact-footer'>
-                            <i class="fa fa-map-marker"></i><li>15 Lorem Ipsum Ln,Boston, MA</li>
-                            <i class="fa fa-phone"></i><li>(555).555.5555 </li>
-                            <i class="fa fa-envelope"></i><li>fakeemail@fake.com</li>
-                        </ul>
-                        {/* </div> */}
+                <Container>
+                    <Row>
+                    <div className="contact col-4 col-sm-2 offset-1">
+                            <ul className='contact-footer'>
+                                <i className="fa fa-map-marker"></i><li>15 Lorem Ipsum Ln,Boston, MA</li>
+                                <i className="fa fa-phone"></i><li>(555).555.5555 </li>
+                                <i className="fa fa-envelope"></i><li>fakeemail@fake.com</li>
+                            </ul>
                     </div>
-                {/* </div> */}
+                            </Row>
+                        </Container>
+                    </div>
+    
 
                 <section className='social-media'>
                     <h5>Social</h5>

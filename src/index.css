@@ -35,6 +35,7 @@ h1, h3, h5, p, li {
   /* padding: 50px 50px; */
 }
 
+
 .site-footer, .contact {
   display: flex;
   /* align-items: center;  */
@@ -66,9 +67,14 @@ body{
   text-align: center;
 }
 
-nav {
- justify-content: center;
+#main-nav {
+ justify-content: space-evenly;
  display: flex;
+}
+
+.a { 
+  list-style-type: none;
+  flex-wrap: none;
 }
 
 /* .social-media a {
