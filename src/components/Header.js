@@ -16,6 +16,12 @@ export default function Header() {
         setModalIsOpen(false)
     }
 
+    const linkStyle = {
+        margin: "1rem",
+        textDecoration: "none",
+        color: 'black'
+      };
+
     return(
         
         <div className="container">
@@ -24,10 +30,10 @@ export default function Header() {
                     <Link to="/"><img src="img/Farine_Logo.png" width="225px" className="img-fluid" alt="Farine logo"/></Link>
                 </div>
                 <div className="col">
-                    <h1>Farine Bakery & Cafe</h1>
+                    <Link to="/" className="header" style={linkStyle} ><h1>Farine Bakery & Cafe</h1>
                     <h3>Boston, MA</h3>
                     <h5 className="text-muted">open everyday 7 AM - 7 PM</h5>
-                    <h5 className="text-muted">bistro fare, house-made fresh breads, pastries & desserts </h5>
+                    <h5 className="text-muted">bistro fare, house-made fresh breads, pastries & desserts </h5></Link>
                 </div>
 
             {/* <!-- Reserve button  --> */}

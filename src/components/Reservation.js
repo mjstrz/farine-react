@@ -41,7 +41,7 @@ class Reservation extends Component  {
 
     render() { 
         return (
-            <div className="container">
+            <div className="container-fluid">
 
                 <div className="row row-content">
                     <div className="col-12">

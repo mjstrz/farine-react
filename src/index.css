@@ -11,10 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* 
+a:link { 
+  color:black;
+} */
 
 h1, h3, h5, p, li { 
   text-align: center;
   font-family: 'Outfit', sans-serif;
+  text-decoration: none;
 }
 
 .giftcard-header, .about-header, .romain-header {
