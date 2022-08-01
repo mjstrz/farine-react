@@ -1,3 +1,4 @@
+import { isCursorAtEnd } from '@testing-library/user-event/dist/utils';
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
@@ -19,7 +20,8 @@ export default function Header() {
     const linkStyle = {
         margin: "1rem",
         textDecoration: "none",
-        color: 'black'
+        color: 'black',
+        hover: 'cursor'
       };
 
     return(
