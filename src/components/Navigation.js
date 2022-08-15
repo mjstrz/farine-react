@@ -15,7 +15,7 @@ export default function Navigation() {
                     <Navbar.Toggle aria-controls="main-nav" />
                     <Navbar.Collapse>
                             <Nav>    
-                                <Nav.Link href="/menutest" className="col-md-2">Join Our Team</Nav.Link>
+                                <Nav.Link href="/ourcats" className="col-md-2">Meet Our Cats</Nav.Link>
                                 <Nav.Link href="/menu" className="col-md-2 justify-content-around">Menu</Nav.Link>
                                 <Nav.Link href="/giftcard" className="col-md-2">Gift Cards</Nav.Link>
                                 <Nav.Link href="/about" className="col-md-2 justify-content-between">Our Story</Nav.Link>

@@ -7,7 +7,7 @@ import Header from './Header';
 import Navigation from './Navigation';
 import Romain from './chefRomain';
 import Menu from './Menu';
-import MenuTest from './joinOurTeam';
+import OurCats from './MeetOurCats';
 import { BrowserRouter, Switch, Route, Redirect, withRouter } from 'react-router-dom';
 
 
@@ -17,7 +17,7 @@ export default function Main() {
             <Header />
             <Navigation />
                 <Switch>
-                    <Route exact path='/menutest' component={MenuTest} />
+                    <Route exact path='/ourcats' component={OurCats} />
                     <Route exact path='/giftcard' component={Giftcard} /> 
                     <Route exact path='/about' component={About} />
                     <Route exact path='/romain' component={Romain} />
