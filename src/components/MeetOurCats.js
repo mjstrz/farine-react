@@ -6,7 +6,7 @@ export default function OurCats() {
     <div className="container">
       <div className="row">
         <Card style={{ width: "18rem" }} >
-          <Card.Img variant="top" src="img/cats/bio/pexels-cats-coming-1605481.jpg" />
+          <Card.Img variant="top" src="img/cats/bio/pexels-cats-coming-1605481.jpg" className="w-100"/>
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>

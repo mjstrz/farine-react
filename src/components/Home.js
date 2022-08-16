@@ -6,8 +6,12 @@ import { Carousel } from "react-bootstrap";
 
 export default function Home() {
 
+  const border = {
+    border: '3px solid orange'
+  }
+
   return (
-    <Carousel variant="dark" fade>
+    <Carousel variant="dark" style={border} fade >
     <Carousel.Item>
       <img
         className="d-block w-100"
