@@ -3,7 +3,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Accordion, Card, Button, CardGroup, Col, Container, Row } from 'react-bootstrap';
 
 export default function Menu() {
+
+  const marginBottom = {
+    marginBottom: '0.75em'
+  }
+
     return(
+
   <div class="container">
         <Accordion defaultActiveKey="0">
           <Accordion.Item eventKey="0">
@@ -13,7 +19,7 @@ export default function Menu() {
                 <Container>
                 <CardGroup>
                   <Row>
-                    <Card className='col-md-4'>
+                    <Card className='col-md-4' style={marginBottom}>
                       <Card.Img src="img/menu_croissant.jpeg" alt="croissant" />
                         <Card.Body>
                           <Card.Title>Classic Croissant</Card.Title>
@@ -22,7 +28,7 @@ export default function Menu() {
                         </Card.Body>
                         <Card.Footer><large class="text-muted">$3</large></Card.Footer>           
                     </Card>
-                    <Card className='col-md-4'>
+                    <Card className='col-md-4' style={marginBottom}>
                       <Card.Img src="img/menu_breakfastPlate.jpeg" alt="Farine Breakfast Plate" />
                         <Card.Body>
                           <Card.Title>Farine Breakfast</Card.Title>
@@ -31,7 +37,7 @@ export default function Menu() {
                         </Card.Body>
                         <Card.Footer><large class="text-muted">$10</large></Card.Footer>    
                     </Card>
-                    <Card className='col-md-4'>
+                    <Card className='col-md-4' style={marginBottom}>
                       <Card.Img src="img/menu_pancakes.jpeg" class="card-img-top" alt="Pancakes" />
                         <Card.Body>
                           <Card.Title>Pancakes</Card.Title>
@@ -191,7 +197,7 @@ export default function Menu() {
                 <Container>
                 <CardGroup>
                   <Row>
-                    <Card className='col-md-4'>
+                    <Card className='col-md-4' style={marginBottom}>
                       <Card.Img src="img/menu_croissant.jpeg" class="card-img-top" alt="croissant"/>
                         <Card.Body>
                           <Card.Title>Classic Croissant</Card.Title>
@@ -200,7 +206,7 @@ export default function Menu() {
                         </Card.Body>
                         <Card.Footer><large class="text-muted">$3</large></Card.Footer>
                     </Card>
-                    <Card className='col-md-4'>
+                    <Card className='col-md-4' style={marginBottom}>
                       <Card.Img src="img/menu_countryLoaf.jpeg" class="card-img-top" alt="Country Loaf" />
                         <Card.Body>
                           <Card.Title>Country Loaf</Card.Title>
@@ -209,7 +215,7 @@ export default function Menu() {
                         </Card.Body>
                         <Card.Footer><large class="text-muted">$5</large></Card.Footer>
                     </Card>
-                    <Card className='col-md-4'>
+                    <Card className='col-md-4' style={marginBottom}>
                       <Card.Img  src="img/menu_blueberryTart.jpeg" class="card-img-top" alt="Blueberry Tart"/>
                         <Card.Body>
                           <Card.Title>Blueberry Tart</Card.Title>
@@ -220,7 +226,7 @@ export default function Menu() {
                     </Card>
                   </Row>
                   <Row>
-                    <Card className='col-md-4'>
+                    <Card className='col-md-4' style={marginBottom}>
                       <Card.Img src="img/menu_brownie.jpeg" class="card-img-top" alt="Belgian Chocolate Brownie"/>
                         <Card.Body>
                           <Card.Title>Belgian Chocolate Brownie</Card.Title>
@@ -229,7 +235,7 @@ export default function Menu() {
                         </Card.Body>
                         <Card.Footer><large class="text-muted">$4</large></Card.Footer>
                     </Card>
-                    <Card className='col-md-4'>
+                    <Card className='col-md-4' style={marginBottom}>
                       <Card.Img src="img/menu_eclair.jpeg" class="card-img-top" alt="Eclair"/>
                         <Card.Body>
                           <Card.Title>French Eclair</Card.Title>
@@ -238,7 +244,7 @@ export default function Menu() {
                         </Card.Body>
                         <Card.Footer><large class="text-muted">$3</large></Card.Footer>
                     </Card>
-                    <Card className='col-md-4'>
+                    <Card className='col-md-4' style={marginBottom}>
                       <Card.Img src="img/menu_mousseAuChocolat.jpeg" class="card-img-top" alt="Chocolate Mousse"/>
                         <Card.Body>
                           <Card.Title>Mousse Au Chocolat</Card.Title>
@@ -316,7 +322,7 @@ export default function Menu() {
                 <Container>
                 <CardGroup>
                   <Row>
-                    <Card className='col-md-4'>
+                    <Card className='col-md-4' style={marginBottom}>
                         <Card.Img src="img/menu_bacon.jpeg" class="card-img-top" alt="Bacon"/>
                           <Card.Body>
                             <Card.Title>Crispy Bacon</Card.Title>
@@ -325,7 +331,7 @@ export default function Menu() {
                           </Card.Body>
                           <Card.Footer><large class="text-muted">$4</large></Card.Footer>
                       </Card>
-                      <Card className='col-md-4'>
+                      <Card className='col-md-4' style={marginBottom}>
                         <Card.Img  src="img/menu_toast.jpeg" class="card-img-top" alt="Toast" />
                           <Card.Body>
                             <Card.Title>Toast with Butter</Card.Title>
@@ -334,7 +340,7 @@ export default function Menu() {
                           </Card.Body>
                           <Card.Footer><large class="text-muted">$2</large></Card.Footer>
                       </Card>
-                      <Card className='col-md-4'>
+                      <Card className='col-md-4' style={marginBottom}>
                         <Card.Img src="img/menu_fries.jpeg" class="card-img-top" alt="French Fries"/>
                           <Card.Body>
                             <Card.Title>French Fries</Card.Title>

@@ -1,17 +1,29 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 // import { Card, CardImg, CardImgOverlay, CardTitle } from "reactstrap";
-import { Carousel } from "react-bootstrap";
-// import { NavLink, Link } from "react-router-dom";
+import { Button, Carousel, Card, CardGroup } from "react-bootstrap";
+// import { Card } from "reactstrap";
+import { NavLink, Link } from "react-router-dom";
 
 export default function Home() {
 
-  const border = {
+  const carousel = {
     border: '3px solid orange'
   }
 
+  const singleCard = {
+    border: '3px solid orange',
+    marginRight: '1em'
+  }
+
+  const cardGroup = {
+    paddingTop: '7em',
+    justifyContent: 'space-between'
+  }
+
   return (
-    <Carousel variant="dark" style={border} fade >
+    <div>
+    <Carousel variant="dark" style={carousel} fade >
     <Carousel.Item>
       <img
         className="d-block w-100"
@@ -122,8 +134,42 @@ export default function Home() {
         </p>
       </Carousel.Caption> */}
     </Carousel.Item>
-
   </Carousel>
+
+  <CardGroup style = {cardGroup}>
+      <Card style={singleCard}>
+        <Card.Img variant="top" src="img/cats/pexels-tatiana-аzatskaya-3616232.jpg" />
+        <Card.Body>
+          <Link to="/ourcats"><Card.Title>Meet Our Cats</Card.Title></Link>
+          <Card.Text>
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      <Card style={singleCard}>
+        <Card.Img variant="top" src="img/OrderOnline.jpeg" alt="Group of friends seated at table" />
+        <Card.Body>
+          <Link to='/menu'><Card.Title>Menu</Card.Title></Link>
+          <Card.Text>
+            This card has supporting text below as a natural lead-in to
+            additional content.{' '}
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      <Card style={singleCard}>
+        <Card.Img variant="top" src="img/ourStory6.jpeg" alt="Vespa outside cafe" />
+        <Card.Body>
+          <Link to="/about"><Card.Title>Our Story</Card.Title></Link>
+          <Card.Text>
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This card has even longer content than the
+            first to show that equal height action.
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    </CardGroup>
+  </div>
 
     //     <div className="Directory justify-content-center">
     //         <div className="row justify-content-center">
