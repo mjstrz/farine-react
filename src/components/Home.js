@@ -138,7 +138,7 @@ export default function Home() {
 
   <CardGroup style = {cardGroup}>
       <Card style={singleCard}>
-        <Card.Img variant="top" src="img/cats/pexels-tatiana-аzatskaya-3616232.jpg" />
+        <Card.Img variant="top" src="img/cats/pexels-tatiana-аzatskaya-3616232.jpg" alt="Cat poking its head out of blanket" />
         <Card.Body>
           <Link to="/ourcats"><Card.Title>Meet Our Cats</Card.Title></Link>
           <Card.Text>
