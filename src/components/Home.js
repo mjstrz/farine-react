@@ -160,7 +160,7 @@ export default function Home() {
       <Card style={singleCard}>
         <Card.Img variant="top" src="img/ourStory6.jpeg" alt="Vespa outside cafe" />
         <Card.Body>
-          <Link to="/about"><Card.Title>Our Story</Card.Title></Link>
+          <Link to="/about" style={{hover: 'cursor'}}><Card.Title>Our Story</Card.Title></Link>
           <Card.Text>
             This is a wider card with supporting text below as a natural lead-in
             to additional content. This card has even longer content than the

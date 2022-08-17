@@ -77,10 +77,15 @@ body{
  display: flex;
 }
 
-.a { 
+a { 
   list-style-type: none;
   flex-wrap: none;
 }
+
+/* .container ul li {
+  display: inline-block;
+  flex-wrap: nowrap;
+} */
 
 /* .social-media a {
   font-size: 3rem;

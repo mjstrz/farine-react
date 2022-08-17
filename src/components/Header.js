@@ -32,7 +32,7 @@ export default function Header() {
                     <Link to="/"><img src="img/Farine_Logo.png" width="225px" className="img-fluid" alt="Farine logo"/></Link>
                 </div>
                 <div className="col">
-                    <Link to="/" className="header" style={linkStyle} ><h1>Farine Bakery & Cafe</h1>
+                    <Link to="/" className="header" style={linkStyle} ><h1>Farine Bakery & Cat Cafe</h1>
                     <h3>Boston, MA</h3>
                     <h5 className="text-muted">open everyday 7 AM - 7 PM</h5>
                     <h5 className="text-muted">bistro fare, house-made fresh breads, pastries & desserts </h5></Link>
@@ -40,7 +40,7 @@ export default function Header() {
 
             {/* <!-- Reserve button  --> */}
                 <div className="col-xs-12 col-md-4 col-xl-2 mt-4">
-                    <Button onClick={setModalIsOpenToTrue} className="btn btn-info btn-md">Reservations</Button>
+                    <Button onClick={setModalIsOpenToTrue} className="btn btn-info btn-md" style={{color: 'white' }}>Reservations</Button>
                 </div> 
             </div>
 
@@ -49,22 +49,22 @@ export default function Header() {
             <ModalHeader>Reserve a Table</ModalHeader>
                     <ModalBody>
                         <Form>
-                            <FormGroup>
+                            <FormGroup style={{margin: '0.5em'}}>
                                 <Label htmlFor="name">Name</Label>
                                 <Input type="text" id="name" name="name" 
                                      />
                             </FormGroup>
-                            <FormGroup>
+                            <FormGroup style={{margin: '0.5em'}}>
                                 <Label htmlFor="email">Email</Label>
                                 <Input type="email" id="email" name="email" 
                                 />
                             </FormGroup>
-                            <FormGroup>
+                            <FormGroup style={{margin: '0.5em'}}>
                                 <Label htmlFor="phone">Phone</Label>
                                 <Input type="tel" id="phone" name="phone" 
                                     />
                             </FormGroup>
-                            <FormGroup>
+                            <FormGroup style={{margin: '0.5em'}}>
                                 <Label htmlFor="numberOfGuests">Number of Guests</Label>
                                 <Input type="select" name="numberofGuests" id="numberofGuests">
                                     <option value="1">1</option>
@@ -74,17 +74,17 @@ export default function Header() {
                                     <option value="5">5</option>
                                 </Input>
                             </FormGroup>
-                            <FormGroup>
+                            <FormGroup style={{margin: '0.5em'}}>
                                 <Label htmlFor="date">Date</Label>
                                 <Input type="date" id="date" name="date" 
                                     />
                             </FormGroup>
-                            <FormGroup>
+                            <FormGroup style={{margin: '0.5em'}}>
                                 <Label htmlFor="date">Time</Label>
                                 <Input type="time" id="time" name="time" 
                                     />
                             </FormGroup>
-                            <Button type="submit" value="submit" color="success">Submit</Button>
+                            <Button type="submit" value="submit" color="success" style={{margin: '0.5em'}}>Submit</Button>
                             <Button onClick={setModalIsOpenToFalse} type="submit" value="submit" color="light">Cancel</Button>
                         </Form>
                     </ModalBody> 
