@@ -17,7 +17,7 @@ export default function Navigation() {
             <Navbar expand="lg">
                 <Container fluid id="main-nav">
                     <Row>
-                    <Navbar.Toggle aria-controls="main-nav" />
+                    <Navbar.Toggle aria-controls="main-nav" id="nav-toggle"/>
                     <Navbar.Collapse>
                             <Nav>    
                                 <Nav.Link 

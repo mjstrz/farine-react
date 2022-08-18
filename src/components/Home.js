@@ -8,7 +8,8 @@ import { NavLink, Link } from "react-router-dom";
 export default function Home() {
 
   const carousel = {
-    border: '3px solid orange'
+    border: '3px solid orange',
+    marginTop: '2em'
   }
 
   const singleCard = {
@@ -17,7 +18,7 @@ export default function Home() {
   }
 
   const cardGroup = {
-    paddingTop: '7em',
+    paddingTop: '4em',
     justifyContent: 'space-between'
   }
 

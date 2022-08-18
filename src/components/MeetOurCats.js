@@ -8,10 +8,11 @@ export default function OurCats() {
   };
 
   return (
-    <div className="container">
+    <div className="container" id="cat-cards">
       <div className="row">
         <Card 
-          style={{ width: "18rem", marginBottom: '0.75em', marginRight: '0.75em', border: '1px' }} 
+          style={{ width: "18rem", marginBottom: '0.75em', marginRight: '0.75em', border: '1px' }}
+          className="cat-card" 
           >
           <Card.Img variant="top" src="img/cats/bio/pexels-cats-coming-1605481.jpg" alt="Tuxedo cat" className="w-100" 
             style={{border: '1px dashed blue'}}/>
