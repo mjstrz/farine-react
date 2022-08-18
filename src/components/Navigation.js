@@ -6,6 +6,11 @@ import { Link } from 'react-router-dom';
 import styled from "styled-components";
 
 export default function Navigation() {
+
+    const linkStyle = {
+        whiteSpace: 'nowrap',
+        margin: '0.5em'
+    }
     return(
         // <nav className="navbar navbar-expand-lg navbar-light align-items-center">
 
@@ -15,11 +20,43 @@ export default function Navigation() {
                     <Navbar.Toggle aria-controls="main-nav" />
                     <Navbar.Collapse>
                             <Nav>    
-                                <Nav.Link href="/ourcats" className="col-md-2">Meet Our Cats</Nav.Link>
-                                <Nav.Link href="/menu" className="col-md-2 justify-content-around">Menu</Nav.Link>
-                                <Nav.Link href="/giftcard" className="col-md-2">Gift Cards</Nav.Link>
-                                <Nav.Link href="/about" className="col-md-2 justify-content-between">Our Story</Nav.Link>
-                                <Nav.Link href="/romain" className="col-md-2 justify-content">Chef Romain</Nav.Link>
+                                <Nav.Link 
+                                    href="/ourcats" className="col-md-2" 
+                                    style={{
+                                        whiteSpace: 'nowrap', 
+                                        marginRight: '2.7em'}}>
+                                            Meet Our Cats
+                                </Nav.Link>
+                                <Nav.Link 
+                                    href="/menu" 
+                                    className="col-md-2 justify-content-around" 
+                                    style={{
+                                        whiteSpace: 'nowrap',
+                                        marginRight: '1.5em' }}>
+                                            Menu
+                                </Nav.Link>
+                                <Nav.Link 
+                                    href="/giftcard" 
+                                    className="col-md-2" 
+                                    style={{
+                                        whiteSpace: 'nowrap',
+                                        marginRight: '2em' }}>
+                                            Gift Cards
+                                </Nav.Link>
+                                <Nav.Link 
+                                    href="/about" 
+                                    className="col-md-2 justify-content-between" 
+                                    style={{
+                                        whiteSpace: 'nowrap' }}>
+                                            Our Story
+                                </Nav.Link>
+                                <Nav.Link 
+                                    href="/romain" 
+                                    className="col-md-2 justify-content" 
+                                    style={{
+                                        whiteSpace: 'nowrap' }}>
+                                            Chef Romain
+                                </Nav.Link>
                                 {/* <ul className="navbar-nav justify-content-center justify-content-between">
                                     <li className="nav-item col-md-2 justify-content"></li> */}
                                     {/* <li className="nav-item col-md-2 justify-content text-nowrap"><StyledLink to="/menutest">Join Our Team</StyledLink></li> */}

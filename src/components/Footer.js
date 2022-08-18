@@ -15,7 +15,7 @@ export default function Footer() {
                     <Row>
                     <div className="contact col-4 col-sm-2 col-xs offset-5">
                             <ul className='contact-footer'>
-                                <i className="fa fa-map-marker"></i><li>15 Lorem Ipsum Ln,Boston, MA</li>
+                                <i className="fa fa-map-marker"></i><li style={{whiteSpace: 'nowrap' }}>15 Lorem Ipsum Ln,Boston, MA</li>
                                 <i className="fa fa-phone"></i><li>(555).555.5555 </li>
                                 <i className="fa fa-envelope"></i><li>fakeemail@fake.com</li>
                             </ul>
