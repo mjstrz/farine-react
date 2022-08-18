@@ -21,40 +21,45 @@ export default function Navigation() {
                     <Navbar.Collapse>
                             <Nav>    
                                 <Nav.Link 
-                                    href="/ourcats" className="col-md-2" 
-                                    style={{
-                                        whiteSpace: 'nowrap', 
-                                        marginRight: '2.7em'}}>
+                                    href="/ourcats" className="col-md-2 active" 
+                                    // style={{
+                                    //     whiteSpace: 'nowrap', 
+                                    //     marginRight: '2.7em'}}
+                                        >
                                             Meet Our Cats
                                 </Nav.Link>
                                 <Nav.Link 
                                     href="/menu" 
                                     className="col-md-2 justify-content-around" 
-                                    style={{
-                                        whiteSpace: 'nowrap',
-                                        marginRight: '1.5em' }}>
+                                    // style={{
+                                    //     whiteSpace: 'nowrap',
+                                    //     marginRight: '1.5em' }}
+                                        >
                                             Menu
                                 </Nav.Link>
                                 <Nav.Link 
                                     href="/giftcard" 
                                     className="col-md-2" 
-                                    style={{
-                                        whiteSpace: 'nowrap',
-                                        marginRight: '2em' }}>
+                                    // style={{
+                                    //     whiteSpace: 'nowrap',
+                                    //     marginRight: '2em' }}
+                                        >
                                             Gift Cards
                                 </Nav.Link>
                                 <Nav.Link 
                                     href="/about" 
                                     className="col-md-2 justify-content-between" 
-                                    style={{
-                                        whiteSpace: 'nowrap' }}>
+                                    // style={{
+                                    //     whiteSpace: 'nowrap' }}
+                                        >
                                             Our Story
                                 </Nav.Link>
                                 <Nav.Link 
                                     href="/romain" 
                                     className="col-md-2 justify-content" 
-                                    style={{
-                                        whiteSpace: 'nowrap' }}>
+                                    // style={{
+                                    //     whiteSpace: 'nowrap' }}
+                                        >
                                             Chef Romain
                                 </Nav.Link>
                                 {/* <ul className="navbar-nav justify-content-center justify-content-between">

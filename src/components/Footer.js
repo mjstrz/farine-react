@@ -13,7 +13,7 @@ export default function Footer() {
             <div className='container'>      
                 <Container>
                     <Row>
-                    <div className="contact col-4 col-sm-2 col-xs offset-5">
+                    <div className="contact col-4 col-sm-2 col-xs offset-5" id="contact">
                             <ul className='contact-footer'>
                                 <i className="fa fa-map-marker"></i><li style={{whiteSpace: 'nowrap' }}>15 Lorem Ipsum Ln,Boston, MA</li>
                                 <i className="fa fa-phone"></i><li>(555).555.5555 </li>

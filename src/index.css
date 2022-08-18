@@ -40,6 +40,52 @@ h1, h3, h5, p, li {
   /* padding: 50px 50px; */
 }
 
+li {
+  padding-left: 0.75em;
+  padding-right: 2.5em;
+  align-items: center;
+}
+
+body{
+  background-color: #fff;
+}
+
+.card-title { 
+  color: orange;
+  text-align: center;
+}
+
+/* NAVIGATION */
+
+#main-nav {
+ justify-content: center;
+ display: flex;
+ white-space: nowrap;
+ padding: 0;
+ margin: 0;
+}
+
+#main-nav a {
+  padding: 1rem 3rem;
+  display: block;
+  /* border: 1px solid red */
+}
+
+#main-nav a:hover {
+  color:darkcyan;
+  font-weight: bold;
+}
+
+a { 
+  list-style-type: none;
+  flex-wrap: none;
+}
+
+.active {
+  color: orange;
+}
+
+/* FOOTER */
 
 .site-footer, .contact {
   display: flex;
@@ -57,29 +103,12 @@ h1, h3, h5, p, li {
   justify-content: space-between;
 }
 
-li {
-  padding-left: 0.75em;
-  padding-right: 2.5em;
-  align-items: center;
-}
-
-body{
-  background-color: #fff;
-}
-
-.card-title { 
-  color: orange;
-  text-align: center;
-}
-
-#main-nav {
- justify-content: space-evenly;
- display: flex;
-}
-
-a { 
-  list-style-type: none;
-  flex-wrap: none;
+@media only screen and (max-width: 480px) {
+  .site-footer, .contact, .contact-footer {
+    float:none; /* Ensure stacking */
+    display:block; /* Ensure stacking */
+    text-align:center; /* Ensure horizontal centering of all footer content */
+  }
 }
 
 /* .container ul li {
