@@ -55,6 +55,18 @@ body{
   text-align: center;
 }
 
+.card.cat-card {
+  width: 18rem; 
+  margin-bottom: 0.75em;
+  margin-right: 0.75em;
+  border: 1px;
+}
+
+.card.card-home { 
+  margin-right: 1em;
+  border: 3px;
+}
+
 /* NAVIGATION */
 
 #main-nav {
@@ -117,7 +129,7 @@ a {
 
   .contact-footer li {
     margin: 0.75em;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
   }
 
   .social-media {
@@ -141,11 +153,17 @@ a {
     align-content: center;
   }
 
-  .card {
+  .card.card-home, .card.cat-card {
     display: flex;
     justify-content: center;
     align-content: center;
+    margin-right: 0;
   }
+
+  .card.cat-card {
+    width:auto;
+  }
+
 }
 
 /* .container ul li {

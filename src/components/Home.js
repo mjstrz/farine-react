@@ -12,10 +12,10 @@ export default function Home() {
     marginTop: '2em'
   }
 
-  const singleCard = {
-    border: '3px solid orange',
-    marginRight: '1em'
-  }
+  // const singleCard = {
+  //   border: '3px solid orange',
+  //   // marginRight: '1em'
+  // }
 
   const cardGroup = {
     paddingTop: '4em',
@@ -138,7 +138,7 @@ export default function Home() {
   </Carousel>
 
   <CardGroup style = {cardGroup}>
-      <Card style={singleCard}>
+      <Card className='card-home'>
         <Card.Img variant="top" src="img/cats/pexels-tatiana-аzatskaya-3616232.jpg" alt="Cat poking its head out of blanket" />
         <Card.Body>
           <Link to="/ourcats"><Card.Title>Meet Our Cats</Card.Title></Link>
@@ -148,7 +148,7 @@ export default function Home() {
           </Card.Text>
         </Card.Body>
       </Card>
-      <Card style={singleCard}>
+      <Card  className='card-home'>
         <Card.Img variant="top" src="img/OrderOnline.jpeg" alt="Group of friends seated at table" />
         <Card.Body>
           <Link to='/menu'><Card.Title>Menu</Card.Title></Link>
@@ -158,7 +158,7 @@ export default function Home() {
           </Card.Text>
         </Card.Body>
       </Card>
-      <Card style={singleCard}>
+      <Card className='card-home'>
         <Card.Img variant="top" src="img/ourStory6.jpeg" alt="Vespa outside cafe" />
         <Card.Body>
           <Link to="/about" style={{hover: 'cursor'}}><Card.Title>Our Story</Card.Title></Link>
