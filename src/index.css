@@ -10,15 +10,13 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    /* font-family: 'Cormorant Garamond', serif; */
+    /* font-family: 'Outfit', sans-serif; */
 }
-/* 
-a:link { 
-  color:black;
-} */
 
-h1, h3, h5, p, li { 
+h1, h3, h5, p, li, a { 
   text-align: center;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   text-decoration: none;
 }
 
@@ -66,6 +64,20 @@ body{
   margin-right: 1em;
   border: 3px;
 }
+
+.accordion { 
+  padding-top: 1em;
+}
+
+/* .about-paragraph{
+  display: flex;
+  justify-content: center;
+} */
+
+/* .about-image {
+  border: 3px solid orange; 
+  margin-bottom: 1em;
+}; */
 
 /* NAVIGATION */
 

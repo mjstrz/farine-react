@@ -7,10 +7,10 @@ import styled from "styled-components";
 
 export default function Navigation() {
 
-    const linkStyle = {
-        whiteSpace: 'nowrap',
-        margin: '0.5em'
-    }
+    // const linkStyle = {
+    //     whiteSpace: 'nowrap',
+    //     margin: '0.5em'
+    // }
     return(
         // <nav className="navbar navbar-expand-lg navbar-light align-items-center">
 
@@ -21,7 +21,7 @@ export default function Navigation() {
                     <Navbar.Collapse>
                             <Nav>    
                                 <Nav.Link 
-                                    href="/ourcats" className="col-md-2 active" 
+                                    href="/ourcats" className="col-md-2" 
                                     // style={{
                                     //     whiteSpace: 'nowrap', 
                                     //     marginRight: '2.7em'}}
@@ -61,6 +61,9 @@ export default function Navigation() {
                                     //     whiteSpace: 'nowrap' }}
                                         >
                                             Chef Romain
+                                </Nav.Link>
+                                <Nav.Link href="#contact">
+                                            Contact
                                 </Nav.Link>
                                 {/* <ul className="navbar-nav justify-content-center justify-content-between">
                                     <li className="nav-item col-md-2 justify-content"></li> */}
