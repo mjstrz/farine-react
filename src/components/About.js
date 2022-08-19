@@ -6,7 +6,7 @@ export default function About() {
 
     return (
       <div className='container about'>
-          <h1 className='about-header'>Our Story</h1>
+          <h3 className='about-header'>Our Story</h3>
 
           <img src="img/ourStory7.jpeg" alt="Barista holding an Open sign" className='img-fluid about-image' />
           

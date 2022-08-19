@@ -124,7 +124,7 @@ export default function Home() {
 
   <CardGroup className="cardgroup-home">
       <Card className='card-home'>
-        <Card.Img variant="top" src="img/cats/pexels-tatiana-аzatskaya-3616232.jpg" alt="Cat poking its head out of blanket" />
+        <Card.Img variant="top" src="img/cats/pexels-tatiana-аzatskaya-3616232.jpg" alt="Cat poking its head out of blanket" className="card-home-image"/>
         <Card.Body>
           <Link to="/ourcats"><Card.Title>Meet Our Cats</Card.Title></Link>
           <Card.Text>
@@ -134,7 +134,7 @@ export default function Home() {
         </Card.Body>
       </Card>
       <Card  className='card-home'>
-        <Card.Img variant="top" src="img/OrderOnline.jpeg" alt="Group of friends seated at table" />
+        <Card.Img variant="top" src="img/OrderOnline.jpeg" alt="Group of friends seated at table" className="card-home-image"/>
         <Card.Body>
           <Link to='/menu'><Card.Title>Menu</Card.Title></Link>
           <Card.Text>
@@ -144,7 +144,7 @@ export default function Home() {
         </Card.Body>
       </Card>
       <Card className='card-home'>
-        <Card.Img variant="top" src="img/ourStory6.jpeg" alt="Vespa outside cafe" />
+        <Card.Img variant="top" src="img/ourStory6.jpeg" alt="Vespa outside cafe" className="card-home-image"/>
         <Card.Body>
           <Link to="/about" style={{hover: 'cursor'}}><Card.Title>Our Story</Card.Title></Link>
           <Card.Text>

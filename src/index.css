@@ -62,6 +62,10 @@ body{
   border: 3px;
 }
 
+.card-home-image { 
+  border: 3px orange;
+}
+
 .cardgroup-home {
   padding-top: 4em;
   justify-content:  space-between;

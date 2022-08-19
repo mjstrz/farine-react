@@ -7,7 +7,7 @@ export default function Giftcard() {
     return (
       <div className='container'>
         <div className='giftcard'>
-          <h1 className='giftcard-header'>Buy a giftcard!</h1>
+          <h3 className='giftcard-header'>Buy a gift card!</h3>
 
           <img src="img/giftcard.jpeg" alt="Barista holding an Open sign" className='img-fluid giftcard-image' />
 
