@@ -15,13 +15,16 @@ export default function Navigation() {
         // <nav className="navbar navbar-expand-lg navbar-light align-items-center">
 
             <Navbar expand="lg">
+                
                 <Container fluid id="main-nav">
+                
                     <Row>
                     <Navbar.Toggle aria-controls="main-nav" id="nav-toggle"/>
                     <Navbar.Collapse>
                             <Nav>    
                                 <Nav.Link 
-                                    href="/ourcats" className="col-md-2" 
+                                    href="/ourcats"  
+                                    // className='col-md-2'
                                     // style={{
                                     //     whiteSpace: 'nowrap', 
                                     //     marginRight: '2.7em'}}
@@ -30,7 +33,7 @@ export default function Navigation() {
                                 </Nav.Link>
                                 <Nav.Link 
                                     href="/menu" 
-                                    className="col-md-2 justify-content-around" 
+                                    // className="col-md-2 justify-content-around" 
                                     // style={{
                                     //     whiteSpace: 'nowrap',
                                     //     marginRight: '1.5em' }}
@@ -39,7 +42,7 @@ export default function Navigation() {
                                 </Nav.Link>
                                 <Nav.Link 
                                     href="/giftcard" 
-                                    className="col-md-2" 
+                                    // className="col-md-2" 
                                     // style={{
                                     //     whiteSpace: 'nowrap',
                                     //     marginRight: '2em' }}
@@ -48,7 +51,7 @@ export default function Navigation() {
                                 </Nav.Link>
                                 <Nav.Link 
                                     href="/about" 
-                                    className="col-md-2 justify-content-between" 
+                                    // className="col-md-2 justify-content-between" 
                                     // style={{
                                     //     whiteSpace: 'nowrap' }}
                                         >
@@ -56,7 +59,7 @@ export default function Navigation() {
                                 </Nav.Link>
                                 <Nav.Link 
                                     href="/romain" 
-                                    className="col-md-2 justify-content" 
+                                    // className="col-md-2 justify-content" 
                                     // style={{
                                     //     whiteSpace: 'nowrap' }}
                                         >

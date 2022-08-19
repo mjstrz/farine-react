@@ -20,11 +20,6 @@ h1, h3, h5, p, li, a {
   text-decoration: none;
 }
 
-.giftcard-header, .about-header, .romain-header {
-  margin-top: 0.75em;
-  margin-bottom: 0.5em;
-}
-
 .giftcard p {
   align-items:stretch
 }
@@ -48,6 +43,8 @@ body{
   background-color: #fff;
 }
 
+/* Customs styles on Bootstrap elements */
+
 .card-title { 
   color: orange;
   text-align: center;
@@ -65,14 +62,32 @@ body{
   border: 3px;
 }
 
+.cardgroup-home {
+  padding-top: 4em;
+  justify-content:  space-between;
+}
+
+.carousel {
+  border: 3px solid orange;
+  margin-top: 2em;
+}
+
 .accordion { 
   padding-top: 1em;
 }
 
-/* .about-paragraph{
+/* other component styles */
+
+.about-paragraph, .chef-paragraph, .giftcard-paragraph {
   display: flex;
   justify-content: center;
-} */
+  padding-top: 1em;
+}
+
+.giftcard-header, .about-header, .chef-header {
+  margin-top: 0.75em;
+  margin-bottom: 0.5em;
+}
 
 /* .about-image {
   border: 3px solid orange; 

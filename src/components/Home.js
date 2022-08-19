@@ -7,24 +7,9 @@ import { NavLink, Link } from "react-router-dom";
 
 export default function Home() {
 
-  const carousel = {
-    border: '3px solid orange',
-    marginTop: '2em'
-  }
-
-  // const singleCard = {
-  //   border: '3px solid orange',
-  //   // marginRight: '1em'
-  // }
-
-  const cardGroup = {
-    paddingTop: '4em',
-    justifyContent: 'space-between'
-  }
-
   return (
     <div>
-    <Carousel variant="dark" style={carousel} fade >
+    <Carousel variant="dark" className="carousel" fade >
     <Carousel.Item>
       <img
         className="d-block w-100"
@@ -137,7 +122,7 @@ export default function Home() {
     </Carousel.Item>
   </Carousel>
 
-  <CardGroup style = {cardGroup}>
+  <CardGroup className="cardgroup-home">
       <Card className='card-home'>
         <Card.Img variant="top" src="img/cats/pexels-tatiana-аzatskaya-3616232.jpg" alt="Cat poking its head out of blanket" />
         <Card.Body>
