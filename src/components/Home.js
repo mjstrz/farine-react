@@ -124,33 +124,29 @@ export default function Home() {
 
   <CardGroup className="cardgroup-home">
       <Card className='card-home'>
-        <Card.Img variant="top" src="img/cats/pexels-tatiana-аzatskaya-3616232.jpg" alt="Cat poking its head out of blanket" className="card-home-image"/>
+      <Link to="/ourcats"><Card.Img variant="top" src="img/cats/pexels-tatiana-аzatskaya-3616232.jpg" alt="Cat poking its head out of blanket" className="card-home-image"/></Link>
         <Card.Body>
-          <Link to="/ourcats"><Card.Title>Meet Our Cats</Card.Title></Link>
+          <Link to="/ourcats" className="home-link"><Card.Title>Meet Our Cats</Card.Title></Link>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+            Learn more about the most important members of our family.  
           </Card.Text>
         </Card.Body>
       </Card>
       <Card  className='card-home'>
-        <Card.Img variant="top" src="img/OrderOnline.jpeg" alt="Group of friends seated at table" className="card-home-image"/>
+      <Link to='/menu'><Card.Img variant="top" src="img/OrderOnline.jpeg" alt="Group of friends seated at table" className="card-home-image"/></Link>
         <Card.Body>
-          <Link to='/menu'><Card.Title>Menu</Card.Title></Link>
+          <Link to='/menu' className="home-link"><Card.Title>Menu</Card.Title></Link>
           <Card.Text>
-            This card has supporting text below as a natural lead-in to
-            additional content.{' '}
+            Check out what we have to offer for food and drink. 
           </Card.Text>
         </Card.Body>
       </Card>
       <Card className='card-home'>
-        <Card.Img variant="top" src="img/ourStory6.jpeg" alt="Vespa outside cafe" className="card-home-image"/>
+        <Link to="/about"><Card.Img variant="top" src="img/ourStory6.jpeg" alt="Vespa outside cafe" className="card-home-image"/></Link>
         <Card.Body>
-          <Link to="/about" style={{hover: 'cursor'}}><Card.Title>Our Story</Card.Title></Link>
+          <Link to="/about" className="home-link" style={{hover: 'cursor'}}><Card.Title>Our Story</Card.Title></Link>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
+            Who we are, where we came from, how we got started. 
           </Card.Text>
         </Card.Body>
       </Card>

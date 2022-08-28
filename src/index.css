@@ -80,6 +80,19 @@ body{
   padding-top: 1em;
 }
 
+.home-link { 
+  text-decoration: none;
+}
+
+.home-link :hover { 
+  color:darkcyan;
+  font-weight: italic;
+}
+
+.card-home-image :hover { 
+  opacity: 1;
+}
+
 /* other component styles */
 
 .about-paragraph, .chef-paragraph, .giftcard-paragraph {

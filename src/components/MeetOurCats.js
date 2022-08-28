@@ -19,8 +19,7 @@ export default function OurCats() {
           <Card.Body>
             <Card.Title>Tux</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Always dressed to impress, Tux loves to keep his fellow Farine felines company on the cat ladder. 
             </Card.Text>
           </Card.Body>
         </Card>
@@ -32,8 +31,7 @@ export default function OurCats() {
           <Card.Body>
             <Card.Title>Marble</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              You'll find Marble loafing around the cafe anywhere there's a cushion. 
             </Card.Text>
           </Card.Body>
         </Card>
@@ -43,10 +41,9 @@ export default function OurCats() {
         className="cat-card">
           <Card.Img variant="top" src="img/cats/bio/pexels-eva-kubíčková-2083940.jpg" alt="Cat lounging on cat toy" style={{border: '1px dashed blue'}} />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>Ziggy</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Ziggy has two big loves: the cat tree and coffee creamer. 
             </Card.Text>
           </Card.Body>
         </Card>
@@ -58,8 +55,7 @@ export default function OurCats() {
           <Card.Body>
             <Card.Title>Garbanzo</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Our sassy ginger loves guests, lounging and chasing yarn. 
             </Card.Text>
           </Card.Body>
         </Card>
@@ -69,10 +65,9 @@ export default function OurCats() {
           className="cat-card">
           <Card.Img variant="top" src="img/cats/bio/pexels-cottonbro-6853506.jpg" alt="Black cat lounging in a chair" style={{border: '1px dashed blue'}}/>
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>Felix</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              He was one of the first cats to join our Farine family. He can be a little shy at first but offers a lot of love once he warms up to you. 
             </Card.Text>
           </Card.Body>
         </Card>
@@ -82,10 +77,9 @@ export default function OurCats() {
           className="cat-card">
           <Card.Img variant="top" src="img/cats/bio/pexels-brigitte-miller-11448414.jpg" alt="A gray and white cat poking out of a plant pot" style={{border: '1px dashed blue'}} />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>Chapeau</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              The baby of our bunch. Loves naps inbetween his bursts of energy and games of hide-and-seek. 
             </Card.Text>
           </Card.Body>
         </Card>
@@ -95,10 +89,9 @@ export default function OurCats() {
           className="cat-card">
           <Card.Img ariant="top" src="img/cats//bio/pexels-tomas-andreopoulos-747795.jpg" alt="Gray striped cat lounging on a sofa" style={{border: '1px dashed blue'}} />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>Kicia</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Our wise elder, Kicia (pronounced 'key-cha') has been with us since Farine's inception. She happily supervises you and makes sure you get your work done!
             </Card.Text>
           </Card.Body>
         </Card>
