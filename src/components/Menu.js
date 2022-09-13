@@ -49,8 +49,8 @@ export default function Menu() {
                     </Card>
                     </Row>
                     <Row>
-                    <Card className='col-md-4' style={{border: '1px'}}>
-                      <Card.Img src="img/menu_eggsBenedict.jpeg" class="card-img-top" alt="Eggs Benedict"/>
+                    <Card className='col-md-4' style={marginBottom}>
+                      <Card.Img src="img/eggsbenedict2.jpg" class="card-img-top" alt="Eggs Benedict"/>
                         <Card.Body>
                           <Card.Title>Eggs Benedict</Card.Title>
                             <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -59,17 +59,17 @@ export default function Menu() {
                         <Card.Footer> <large class="text-muted">$7</large></Card.Footer>
                     </Card>
                     
-                    <Card className='col-md-4' style={{border: '1px'}}>
-                      <Card.Img src="img/menu_breakfastSandwich.jpeg" class="card-img-top" alt="Breakfast sandwich" />
+                    <Card className='col-md-4' style={marginBottom}>
+                      <Card.Img src="img/shakshuka.jpg" class="card-img-top" alt="Breakfast sandwich" />
                         <Card.Body>
-                          <Card.Title>Breakfast Sandwich</Card.Title>
+                          <Card.Title>Shakshuka</Card.Title>
                             <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                                         magna aliqua.</Card.Text>
                         </Card.Body>
                         <Card.Footer><large class="text-muted">$9</large></Card.Footer>
                     </Card>
-                    <Card className='col-md-4' style={{border: '1px'}}>
-                      <Card.Img src="img/menu_quiche.jpeg" class="card-img-top" alt="Quiche"/>
+                    <Card className='col-md-4' style={marginBottom}>
+                      <Card.Img src="img/Quiche2.jpg" class="card-img-top" alt="Quiche"/>
                         <Card.Body>
                           <Card.Title>Quiche</Card.Title>
                             <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -208,7 +208,7 @@ export default function Menu() {
                         <Card.Footer><large class="text-muted">$3</large></Card.Footer>
                     </Card>
                     <Card className='col-md-4' style={marginBottom}>
-                      <Card.Img src="img/menu_countryLoaf.jpeg" class="card-img-top" alt="Country Loaf" />
+                      <Card.Img src="img/countryloaf2.jpg" class="card-img-top" alt="Country Loaf" />
                         <Card.Body>
                           <Card.Title>Country Loaf</Card.Title>
                             <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -246,7 +246,7 @@ export default function Menu() {
                         <Card.Footer><large class="text-muted">$3</large></Card.Footer>
                     </Card>
                     <Card className='col-md-4' style={marginBottom}>
-                      <Card.Img src="img/menu_mousseAuChocolat.jpeg" class="card-img-top" alt="Chocolate Mousse"/>
+                      <Card.Img src="img/chocolatecake2.jpg" class="card-img-top" alt="chocolate cake"/>
                         <Card.Body>
                           <Card.Title>Mousse Au Chocolat</Card.Title>
                             <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -286,7 +286,7 @@ export default function Menu() {
                 <p>Made Fresh Daily.</p> 
                 <CardGroup>
                   <Card style={{border: '1px', margin: '0.2em'}}>
-                    <Card.Img src="img/menu_Salad.jpeg" class="card-img-top" alt="House Salad" />
+                    <Card.Img src="img/housesalad2.jpg" class="card-img-top" alt="House Salad" />
                       <Card.Body>
                         <Card.Title>House Salad</Card.Title>
                           <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -304,7 +304,7 @@ export default function Menu() {
                       <Card.Footer><large class="text-muted">$7</large></Card.Footer>
                   </Card>
                   <Card style={{border: '1px', margin: '0.2em'}}>
-                    <Card.Img src="img/menu_soupPumpkin.jpeg" class="card-img-top" alt="Pumpkin Soup" />
+                    <Card.Img src="img/pumpkinsoup2.jpg" class="card-img-top" alt="Pumpkin Soup" />
                       <Card.Body>
                         <Card.Title>Pumpkin Soup</Card.Title>
                           <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -333,7 +333,7 @@ export default function Menu() {
                           <Card.Footer><large class="text-muted">$4</large></Card.Footer>
                       </Card>
                       <Card className='col-md-4' style={marginBottom}>
-                        <Card.Img  src="img/menu_toast.jpeg" class="card-img-top" alt="Toast" />
+                        <Card.Img  src="img/toastwithbutter2.jpg" class="card-img-top" alt="Toast stamped with smiling cat face" />
                           <Card.Body>
                             <Card.Title>Toast with Butter</Card.Title>
                               <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -348,20 +348,20 @@ export default function Menu() {
                               <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                                 magna aliqua.</Card.Text>                
                           </Card.Body>
-                          <Card.Footer><large class="text-muted">$5</large></Card.Footer>
+                          <Card.Footer><large class="text-muted">$4</large></Card.Footer>
                       </Card>
                       </Row>
                       <Row>
-                        <Card className='col-md-4' style={{border: '1px', margin: '0.2em'}}>
-                          <Card.Img src="img/menu_avocado.jpeg" class="card-img-top" alt="Avocado" />
+                        <Card className='col-md-4' style={marginBottom}>
+                          <Card.Img src="img/avocado2.jpg" class="card-img-top" alt="Avocado sliced in half" />
                             <Card.Body>
                               <Card.Title>Avocado</Card.Title>
                                 <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                                   magna aliqua.</Card.Text>                
                             </Card.Body>
-                            <Card.Footer><large class="text-muted">$3</large></Card.Footer>
+                            <Card.Footer><large class="text-muted">$2</large></Card.Footer>
                         </Card>
-                        <Card className='col-md-4' style={{border: '1px', margin: '0.2em'}}>
+                        <Card className='col-md-4' style={marginBottom}>
                           <Card.Img src="img/menu_cheese.jpeg" class="card-img-top" alt="Emmenthal Cheese"/>
                             <Card.Body>
                               <Card.Title>Emmenthal Cheese</Card.Title>
@@ -370,13 +370,13 @@ export default function Menu() {
                             </Card.Body>
                             <Card.Footer><large class="text-muted">$2</large></Card.Footer>
                         </Card>
-                        <Card className='col-md-4' style={{border: '1px', margin: '0.2em'}}>
+                        <Card className='col-md-4' style={marginBottom}>
                           <Card.Img src="img/menu_salmon.jpeg" class="card-img-top" alt="Salmon" />
                             <Card.Body>
                               <Card.Title>Salmon</Card.Title>
                                 <Card.Text></Card.Text>
                             </Card.Body>
-                            <Card.Footer><large class="text-muted">$4</large></Card.Footer>
+                            <Card.Footer><large class="text-muted">$7</large></Card.Footer>
                         </Card>
                       </Row>
                     </CardGroup>
@@ -399,7 +399,7 @@ export default function Menu() {
                         <Card.Footer><large class="text-muted">$2</large></Card.Footer>
                     </Card>
                     <Card className='col-md-4' style={{border: '1px', margin: '0.2em'}}>
-                    <Card.Img src="img/latte.jpg" alt="latte" />
+                    <Card.Img src="img/latte2.jpg" alt="latte" />
                       <Card.Body>
                         <Card.Title>Latte</Card.Title>
                           <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore

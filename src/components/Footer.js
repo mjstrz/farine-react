@@ -10,14 +10,15 @@ export default function Footer() {
     return(
         
         <div>
-            <div className='container'>      
+            <div className='container'> 
+                      
                 <Container>
                     <Row>
                     <div className="contact" id="contact">
                             <ul className='contact-footer'>
-                                <i className="fa fa-map-marker"></i><li style={{whiteSpace: 'nowrap' }}>15 Lorem Ipsum Ln,Boston, MA</li>
+                                <i className="fa fa-map-marker"></i><li style={{whiteSpace: 'nowrap' }}>15 Lorem Ipsum Lane, Boston, MA</li>
                                 <i className="fa fa-phone"></i><li>(555).555.5555 </li>
-                                <i className="fa fa-envelope"></i><li>fakeemail@fake.com</li>
+                                <i className="fa fa-envelope"></i><li>strzelecki.monica7@gmail.com</li>
                             </ul>
                     </div>
                             </Row>

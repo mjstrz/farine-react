@@ -9,6 +9,7 @@ export default function OurCats() {
 
   return (
     <div className="container" id="cat-cards">
+      <div className="row">They can't wait to meet you!</div>
       <div className="row">
         <Card 
           // style={{ width: "18rem", marginBottom: '0.75em', marginRight: '0.75em', border: '1px' }}
@@ -55,7 +56,7 @@ export default function OurCats() {
           <Card.Body>
             <Card.Title>Garbanzo</Card.Title>
             <Card.Text>
-              Our sassy ginger loves guests, lounging and chasing yarn. 
+              Our sassy ginger loves guests, lounging and chasing strings of yarn. 
             </Card.Text>
           </Card.Body>
         </Card>
@@ -67,7 +68,7 @@ export default function OurCats() {
           <Card.Body>
             <Card.Title>Felix</Card.Title>
             <Card.Text>
-              He was one of the first cats to join our Farine family. He can be a little shy at first but offers a lot of love once he warms up to you. 
+              One of the first cats to join our Farine family. He can be a little shy at first but offers a lot of love once he warms up to you. 
             </Card.Text>
           </Card.Body>
         </Card>
@@ -79,7 +80,7 @@ export default function OurCats() {
           <Card.Body>
             <Card.Title>Chapeau</Card.Title>
             <Card.Text>
-              The baby of our bunch. Loves naps inbetween his bursts of energy and games of hide-and-seek. 
+              The baby of our bunch. This furball loves naps inbetween games of hide-and-seek. 
             </Card.Text>
           </Card.Body>
         </Card>
@@ -91,7 +92,7 @@ export default function OurCats() {
           <Card.Body>
             <Card.Title>Kicia</Card.Title>
             <Card.Text>
-              Our wise elder, Kicia (pronounced 'key-cha') has been with us since Farine's inception. She happily supervises you and makes sure you get your work done!
+              Our wise elder, Kicia (pronounced 'key-cha') has been with us since Farine's inception. She'll happily supervise you and make sure you get your work done!
             </Card.Text>
           </Card.Body>
         </Card>
