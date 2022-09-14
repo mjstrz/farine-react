@@ -14,6 +14,7 @@ export default function Footer() {
                       
                 <Container>
                     <Row>
+                    {/* <hr /> */}
                     <div className="contact" id="contact">
                             <ul className='contact-footer'>
                                 <i className="fa fa-map-marker"></i><li style={{whiteSpace: 'nowrap' }}>15 Lorem Ipsum Lane, Boston, MA</li>

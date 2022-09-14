@@ -19,6 +19,7 @@ export default function Navigation() {
                 <Container fluid id="main-nav">
                 
                     <Row>
+                    <hr />
                     <Navbar.Toggle aria-controls="main-nav" id="nav-toggle"/>
                     <Navbar.Collapse>
                             <Nav>    
@@ -78,6 +79,7 @@ export default function Navigation() {
                                 {/* </ul> */}
                             </Nav>
                     </Navbar.Collapse>
+                    <hr />
                     </Row>
                 </Container>
             </Navbar>

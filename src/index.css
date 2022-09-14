@@ -57,6 +57,10 @@ body{
   border: 1px;
 }
 
+.cat-card-intro { 
+  padding: 1em; 
+}
+
 .card.card-home { 
   margin-right: 1em;
   border: 3px;
@@ -143,10 +147,17 @@ a {
 
 /* FOOTER */
 
-.site-footer, .contact {
+.site-footer {
   display: flex;
   /* align-items: center;  */
   padding: 2em;
+  justify-content: center;
+}
+
+.contact { 
+  display: flex;
+  padding-top: 3em;
+  padding-bottom: 0.5em;
   justify-content: center;
 }
 
@@ -187,6 +198,7 @@ a {
   #cat-cards {
     display: block;
     justify-content: center;
+    align-items: center;
     padding-top: 1em;
   }
 
@@ -197,7 +209,7 @@ a {
     align-content: center;
   }
 
-  .card.card-home, .card.cat-card {
+  .card.card-home, .card.cat-card, .row.cat-card-intro {
     display: flex;
     justify-content: center;
     align-content: center;

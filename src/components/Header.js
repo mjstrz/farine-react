@@ -29,7 +29,7 @@ export default function Header() {
         <div className="container">
             <div className="row">
                 <div className="col-4 col-sm-3 col-md-2 align-self-center d-none d-lg-block" id="farine-logo">
-                    <Link to="/"><img src="img/Farine_Logo.png" width="225px" className="img-fluid" alt="Farine logo"/></Link>
+                    <Link to="/"><img src="img/Farine_Logo2.png" width="225px" className="img-fluid" alt="Farine logo"/></Link>
                 </div>
                 <div className="col">
                     <Link to="/" className="header" style={linkStyle} ><h1>Farine Bakery & Cat Cafe</h1>

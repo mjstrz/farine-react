@@ -8,9 +8,11 @@ export default function OurCats() {
   // };
 
   return (
-    <div className="container" id="cat-cards">
-      <div className="row">They can't wait to meet you!</div>
+    <div className="container" >
       <div className="row">
+        <div className="col cat-card-intro"><h6>They can't wait to meet you!</h6></div>
+      </div>
+      <div className="row" id="cat-cards">
         <Card 
           // style={{ width: "18rem", marginBottom: '0.75em', marginRight: '0.75em', border: '1px' }}
           className="cat-card" 
