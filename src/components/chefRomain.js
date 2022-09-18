@@ -4,7 +4,7 @@ import {Col, Row} from 'react-bootstrap'
 export default function Romain() {
     return(
 <div className='container chef'>
-          <h3 className='chef-header'>Our Story</h3>
+          <h3 className='chef-header'>Chef Romain</h3>
 
           <img src="img/chefRomain1.jpg" alt="Pastry chef sifting flour" className='img-fluid chef-image' />
           

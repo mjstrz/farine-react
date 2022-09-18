@@ -9,11 +9,11 @@ import 'font-awesome/css/font-awesome.css';
 import 'bootstrap-social/bootstrap-social.css';
 
 ReactDOM.render(
-  <Provider store={configureStore()} >
+  // <Provider store={configureStore()} >
   <React.StrictMode>
     <App />
-  </React.StrictMode>
-  </Provider>,
+  </React.StrictMode>,
+  // </Provider>
   document.getElementById('root')
 );
 

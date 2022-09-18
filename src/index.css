@@ -66,8 +66,8 @@ body{
   border: 3px;
 }
 
-.card-home-image { 
-  border: 3px orange;
+.card-img-top.card-home-image { 
+  border: 3px solid orange;
 }
 
 .cardgroup-home {
@@ -76,7 +76,7 @@ body{
 }
 
 .carousel {
-  border: 3px solid orange;
+  border: 2px solid orange;
   margin-top: 2em;
 }
 
@@ -105,6 +105,10 @@ body{
   padding-top: 1em;
 }
 
+.img-fluid.chef-image, .img-fluid.about-image { 
+  border: 3px solid orange;
+}
+
 .giftcard-header, .about-header, .chef-header {
   margin-top: 0.75em;
   margin-bottom: 0.5em;
@@ -123,6 +127,8 @@ body{
  white-space: nowrap;
  padding: 0;
  margin: 0;
+ border-top: 1px solid gainsboro;
+ border-bottom: 1px solid gainsboro;
 }
 
 #main-nav a {
@@ -156,9 +162,16 @@ a {
 
 .contact { 
   display: flex;
-  padding-top: 3em;
-  padding-bottom: 0.5em;
+  padding-top: 0.75em;
+  padding-bottom: 0.25em;
   justify-content: center;
+  border-top: 1px solid gainsboro;
+  /* margin-top: 2em; */
+}
+
+.social-media { 
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 1em;
 }
 
 .contact-footer {
@@ -180,6 +193,11 @@ a {
     justify-content: flex-start;
     padding-bottom: 0.4em;
     
+  }
+
+  #main-nav {
+    border-top: none;
+    padding-bottom: 1em;
   }
 
   .contact-footer li {
@@ -220,6 +238,13 @@ a {
     width:auto;
   }
 
+}
+
+@media only screen and (max-width: 1000px) {
+  #main-nav { 
+    border-top: none;
+    padding-bottom: 1em;
+  }
 }
 
 /* .container ul li {

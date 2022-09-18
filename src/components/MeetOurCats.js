@@ -8,14 +8,14 @@ export default function OurCats() {
   // };
 
   return (
-    <div className="container" >
+    <div className="container">
       <div className="row">
         <div className="col cat-card-intro"><h6>They can't wait to meet you!</h6></div>
       </div>
       <div className="row" id="cat-cards">
         <Card 
           // style={{ width: "18rem", marginBottom: '0.75em', marginRight: '0.75em', border: '1px' }}
-          className="cat-card" 
+          className="cat-card col-3" 
           >
           <Card.Img variant="top" src="img/cats/bio/pexels-cats-coming-1605481.jpg" alt="Tuxedo cat" className="w-100" 
             style={{border: '1px dashed blue'}}/>
@@ -29,7 +29,7 @@ export default function OurCats() {
 
         <Card 
         // style={{ width: "18rem", marginBottom: '0.75em', marginRight: '0.75em', border: '1px' }} 
-          className="d-block cat-card">
+          className="d-block cat-card col-3">
           <Card.Img variant="top" src="img/cats/bio/pexels-roman-odintsov-6979817.jpg" alt="Cat sitting" style={{border: '1px dashed blue'}} />
           <Card.Body>
             <Card.Title>Marble</Card.Title>
@@ -41,7 +41,7 @@ export default function OurCats() {
 
         <Card 
         // style={{ width: "18rem", marginBottom: '0.75em', marginRight: '0.75em', border: '1px' }} 
-        className="cat-card">
+        className="cat-card col-3">
           <Card.Img variant="top" src="img/cats/bio/pexels-eva-kubíčková-2083940.jpg" alt="Cat lounging on cat toy" style={{border: '1px dashed blue'}} />
           <Card.Body>
             <Card.Title>Ziggy</Card.Title>
@@ -53,7 +53,7 @@ export default function OurCats() {
 
         <Card 
           // style={{ width: "18rem", marginBottom: '0.75em', marginRight: '0.75em', border: '1px'}} 
-          className="cat-card">
+          className="cat-card col-3">
           <Card.Img variant="top" src="img/cats/bio/pexels-mati-mango-4734723.jpg" alt="A ginger cat lounging in a chair" style={{border: '1px dashed blue'}} />
           <Card.Body>
             <Card.Title>Garbanzo</Card.Title>
@@ -62,6 +62,9 @@ export default function OurCats() {
             </Card.Text>
           </Card.Body>
         </Card>
+
+        </div>
+        <div className="row">
 
         <Card 
           // style={{ width: "18rem", marginBottom: '0.75em', marginRight: '0.75em', border: '1px' }} 

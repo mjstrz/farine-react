@@ -14,7 +14,7 @@ export default function Footer() {
                       
                 <Container>
                     <Row>
-                    {/* <hr /> */}
+                    
                     <div className="contact" id="contact">
                             <ul className='contact-footer'>
                                 <i className="fa fa-map-marker"></i><li style={{whiteSpace: 'nowrap' }}>15 Lorem Ipsum Lane, Boston, MA</li>
@@ -33,7 +33,7 @@ export default function Footer() {
                     <a className="btn btn-social-icon btn-facebook" href="http://www.facebook.com/" target="_blank"><i className="fa fa-facebook" /></a>{' '}   
                 </section>
             
-            <hr />
+            
 
                 <footer className='site-footer'>      
                     <h5>
