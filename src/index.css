@@ -51,9 +51,9 @@ body{
 }
 
 .card.cat-card {
-  width: 18rem; 
+  /* width: 18rem;  */
   margin-bottom: 0.75em;
-  margin-right: 0.75em;
+  /* margin-right: 0.75em; */
   border: 1px;
 }
 
@@ -105,7 +105,7 @@ body{
   padding-top: 1em;
 }
 
-.img-fluid.chef-image, .img-fluid.about-image { 
+.img-fluid.chef-image, .img-fluid.about-image, .img-fluid.giftcard-image { 
   border: 3px solid orange;
 }
 
@@ -213,11 +213,12 @@ a {
     margin-top: 0.5em
   }
 
-  #cat-cards {
+  .cat-cards {
     display: block;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     padding-top: 1em;
+    flex-wrap: nowrap;
   }
 
   .card-group {

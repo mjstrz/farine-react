@@ -40,7 +40,7 @@ export default function Footer() {
                     Copyright &copy; {year} Monica Strzelecki
                     </h5>
                 </footer> 
-                </div>
+        </div>
 
     )
 }
