@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/farine-react/static/css/main.c65ef9fc.css",
-    "main.js": "/farine-react/static/js/main.1f11524f.js",
+    "main.js": "/farine-react/static/js/main.36ebfdea.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/farine-react/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/farine-react/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/farine-react/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
@@ -9,10 +9,10 @@
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/farine-react/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "index.html": "/farine-react/index.html",
     "main.c65ef9fc.css.map": "/farine-react/static/css/main.c65ef9fc.css.map",
-    "main.1f11524f.js.map": "/farine-react/static/js/main.1f11524f.js.map"
+    "main.36ebfdea.js.map": "/farine-react/static/js/main.36ebfdea.js.map"
   },
   "entrypoints": [
     "static/css/main.c65ef9fc.css",
-    "static/js/main.1f11524f.js"
+    "static/js/main.36ebfdea.js"
   ]
 }
