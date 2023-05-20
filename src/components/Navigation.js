@@ -61,9 +61,9 @@ export default function Navigation() {
                                         >
                                             Chef Romain
                                 </Link>
-                                <Link to="#contact">
+                                <Nav.Link href="#contact">
                                             Contact
-                                </Link>
+                                </Nav.Link>
                                 {/* <ul className="navbar-nav justify-content-center justify-content-between">
                                     <li className="nav-item col-md-2 justify-content"></li> */}
                                     {/* <li className="nav-item col-md-2 justify-content text-nowrap"><StyledLink to="/menutest">Join Our Team</StyledLink></li> */}

@@ -135,6 +135,8 @@ body{
   padding: 1rem 3rem;
   display: block;
   /* border: 1px solid red */
+  text-decoration: none;
+  color: #6c757d
 }
 
 #main-nav a:hover {
