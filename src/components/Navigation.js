@@ -23,52 +23,47 @@ export default function Navigation() {
                     <Navbar.Toggle aria-controls="main-nav" id="nav-toggle"/>
                     <Navbar.Collapse>
                             <Nav>    
-                                <Nav.Link 
-                                    href="/ourcats"  
+                            <Link to="/ourcats"  
                                     // className='col-md-2'
                                     // style={{
                                     //     whiteSpace: 'nowrap', 
                                     //     marginRight: '2.7em'}}
                                         >
                                             Meet Our Cats
-                                </Nav.Link>
-                                <Nav.Link 
-                                    href="/menu" 
+                                </Link>
+                                <Link to="/menu" 
                                     // className="col-md-2 justify-content-around" 
                                     // style={{
                                     //     whiteSpace: 'nowrap',
                                     //     marginRight: '1.5em' }}
                                         >
                                             Menu
-                                </Nav.Link>
-                                <Nav.Link 
-                                    href="/giftcard" 
+                                </Link>
+                                <Link to="/giftcard" 
                                     // className="col-md-2" 
                                     // style={{
                                     //     whiteSpace: 'nowrap',
                                     //     marginRight: '2em' }}
                                         >
                                             Gift Cards
-                                </Nav.Link>
-                                <Nav.Link 
-                                    href="/about" 
+                                </Link>
+                                <Link to="/about" 
                                     // className="col-md-2 justify-content-between" 
                                     // style={{
                                     //     whiteSpace: 'nowrap' }}
                                         >
                                             Our Story
-                                </Nav.Link>
-                                <Nav.Link 
-                                    href="/romain" 
+                                </Link>
+                                <Link to="/romain" 
                                     // className="col-md-2 justify-content" 
                                     // style={{
                                     //     whiteSpace: 'nowrap' }}
                                         >
                                             Chef Romain
-                                </Nav.Link>
-                                <Nav.Link href="#contact">
+                                </Link>
+                                <Link to="#contact">
                                             Contact
-                                </Nav.Link>
+                                </Link>
                                 {/* <ul className="navbar-nav justify-content-center justify-content-between">
                                     <li className="nav-item col-md-2 justify-content"></li> */}
                                     {/* <li className="nav-item col-md-2 justify-content text-nowrap"><StyledLink to="/menutest">Join Our Team</StyledLink></li> */}
