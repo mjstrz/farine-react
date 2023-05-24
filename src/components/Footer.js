@@ -19,7 +19,7 @@ export default function Footer() {
                             <ul className='contact-footer'>
                                 <i className="fa fa-map-marker"></i><li style={{whiteSpace: 'nowrap' }}>15 Lorem Ipsum Lane, Boston, MA</li>
                                 <i className="fa fa-phone"></i><li>(555).555.5555 </li>
-                                <i className="fa fa-envelope"></i><li>strzelecki.monica7@gmail.com</li>
+                                <i className="fa fa-envelope"></i><li>loremIpsum@dolor.set</li>
                             </ul>
                     </div>
                             </Row>
@@ -37,7 +37,7 @@ export default function Footer() {
 
                 <footer className='site-footer'>      
                     <h5>
-                    Copyright &copy; {year} Monica Strzelecki
+                    Copyright &copy; {year} Mjstrz
                     </h5>
                 </footer> 
         </div>
